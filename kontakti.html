@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,500" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
+    <title>Kontakti</title>
+  </head>
+  <body>
+      
+      <header>
+          <div class="logo">MEŽĀŽI</div>
+            <nav>
+                <ul>
+                    <li><a href="#">Sākums</a></li>
+                    <li><a href="#">Par mums</a></li>
+                    <li><a href="#">Rezervācija</a></li>
+                    <li><a href="#">Atsauksmes</a></li>
+                    <li><a href="#">Kontakti</a></li>
+                </ul>
+            </nav>    
+      </header>
+     
+      <div id="kontaktu_info">
+          <div id="social">
+              <a class="social"><span class="entypo-facebook"></span></a>
+              <a class="social"><span class="entypo-twitter"></span></a>
+              <a class="social"><span class="entypo-instagrem"></span></a>
+          </div>
+        
+          <div id="kont_info_wrap">
+              <p class="other entypo-phone">+371 29212105</p>
+              <p class="other entypo-mail">mezazi@gmail.com</p>
+              <p class="other entypo-home">Zaļā iela 3, Siguļi</p>
+          </div>
+            
+          <div id="rekviz_wrap">
+              <p class="other">Konta Nr.: LV89HABA16584651654656</p>
+              <p class="other">Banka: Swedbank</p>
+              <p class="other">Reģ. Nr.: 80016545464</p>
+          </div>
+            
+          <div class="btn_wrap"><a href="#" class="rezerv_poga">Veikt rezervāciju</a></div>
+      </div>
+      
+      
+    <div id="map"></div>
+    <script>
+      var map;
+      function initMap() {
+       var map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: 57.071333, lng: 24.160454},
+          zoom: 11,
+          disableDefaultUI: true,
+          styles: [
+            {
+              featureType: 'all',
+              stylers: [
+                { saturation: -80 }
+              ]
+            },{
+              featureType: 'road',
+              elementType: 'geometry',
+              stylers: [
+                { hue: '#0e045c' },
+                { saturation: 20 }
+              ]
+            },{
+              featureType: 'road',
+              elementType: 'labels',
+              stylers: [
+                { visibility: 'on' }
+              ]
+            },{
+              featureType: 'administrative.province',
+              elementType: 'all',
+              stylers: [
+                { visibility: 'off' }
+              ]
+            },{
+              featureType: 'poi.business',
+              elementType: 'labels',
+              stylers: [
+                { visibility: 'off' }
+              ]
+            },{
+              featureType: 'transit.line',
+              elementType: 'geometry',
+              stylers: [
+                { visibility: 'off' }
+              ]
+            }
+          ]
+        });
+          
+       marker = new google.maps.Marker({
+          position: {lat: 57.123109, lng: 24.318968},
+          map: map,
+          animation: google.maps.Animation.BOUNCE,
+        });
+       var contentString = '<div id="map_pointer">'+
+           '<a href="https://goo.gl/maps/r92PFiwnN1S2" target="_blank">Plānot maršrutu Google kartē</a>'+
+           '</div>';
+       marker.addListener('mouseout', function() {
+         t = setTimeout(function () { infowindow.close() }, 2000);
+        });
+
+       var infowindow = new google.maps.InfoWindow({
+         content: contentString
+        });
+       
+       google.maps.event.addListener(marker, 'mouseover', function() {
+          infowindow.open(map, marker);
+        }); 
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCOW4408WVR9yCSFuOZuTRucpxK5DsdfGg&callback=initMap"
+    async defer></script>
+  </body>
+</html>
+

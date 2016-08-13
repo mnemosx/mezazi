@@ -1,0 +1,123 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Par mums</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <style>
+        .container {
+             width: 100%;
+             height: 100%;
+        }
+        .container div {
+          
+             display: inline-block;
+             display: none;
+        }
+        .container img {
+             width: 100%;
+             height: 100%;
+             object-fit: cover;
+        }
+        
+        .galer-poga {
+            position: absolute;
+            z-index: 2;
+            top: 50%;
+        }
+        .next {
+            right: 40px;
+            padding: 20% 2% 20% 40%;
+            margin: -20% -1%;
+        }
+
+        .prev {
+            left: 40px;
+            padding: 20% 40% 20% 2%;
+            margin: -20% -2%;
+        }
+        
+        .fa {
+            font-size: 4vw;
+            color: #ffd2cf;
+        }
+        
+        .fa:hover {
+            cursor: pointer;
+            -webkit-animation: bounceright .3s alternate ease infinite;
+            animation: bounceright .3s alternate ease infinite;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">MEŽĀŽI</div>
+        <nav>
+            <ul>
+                <li><a href="#">Sākums</a></li>
+                <li><a href="#">Par mums</a></li>
+                <li><a href="#">Rezervācija</a></li>
+                <li><a href="#">Atsauksmes</a></li>
+                <li><a href="#">Kontakti</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- Galerija pēc šī tutorial https://www.sitepoint.com/web-foundations/making-simple-image-slider-html-css-jquery/ -->
+    
+    <section class="about">
+        <i class="fa fa-chevron-right galer-poga next"></i>
+        <i class="fa fa-chevron-left galer-poga prev"></i>
+            <div class="container">
+                <div style="display: inline-block;"><img src="/Pirts/img/pic3.jpg"/></div>
+                <div><img src="/Pirts/img/pic1.jpg"/></div>
+                <div><img src="/Pirts/img/pic2.jpg"/></div>
+                <div><img src="/Pirts/img/pic4.jpg"/></div>
+          </div>
+    </section>
+
+    
+    <script>
+        var currentIndex = 0,
+          items = $('.container div'),
+          itemAmt = items.length;
+
+        function cycleItems() {
+          var item = $('.container div').eq(currentIndex);
+          items.hide();
+          item.css('display','inline-block');
+        }
+// jānoņem autoslide
+        
+        var autoSlide = setInterval(function() {
+          currentIndex += 0;
+          if (currentIndex > itemAmt - 1) {
+            currentIndex = 0;
+          }
+          cycleItems();
+        }, 3000);
+
+        $('.next').click(function() {
+          clearInterval(autoSlide);
+          currentIndex += 1;
+          if (currentIndex > itemAmt - 1) {
+            currentIndex = 0;
+          }
+          cycleItems();
+        });
+
+        $('.prev').click(function() {
+          clearInterval(autoSlide);
+          currentIndex -= 1;
+          if (currentIndex < 0) {
+            currentIndex = itemAmt - 1;
+          }
+          cycleItems();
+        });
+    </script>
+</body>
+
+</html>
