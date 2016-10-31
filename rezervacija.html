@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="stylesheet.css">
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
-    <link href="//fonts.googleapis.com/css?family=Raleway:300,500" rel="stylesheet">
-    <link href="//fonts.googleapis.com/css?family=Roboto:300" rel='stylesheet' type='text/css'>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,500" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel='stylesheet' type='text/css'>
     <style>
         html {
             overflow: auto;
@@ -34,6 +35,44 @@
         .reg_nosauk {
             font-family: Raleway, 'sans-serif';
             padding: 30px;
+        }
+        
+        .reg_nosauk h2:before {
+            background-size: 40px 40px;
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            position: relative;
+            top: 12px;
+            right: 10px;
+            opacity: 0;
+            content: "";
+        }
+        
+        @keyframes slideIn {
+            0% {
+                transform: translateX(-900px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+        
+        .first-h2:before {
+            background-image: url(img/1.svg);
+            animation: slideIn 1s ease 1s forwards;
+        }
+        
+        .second-h2:before {
+            background-image: url(img/2.svg);
+            animation: slideIn 1s ease 2s forwards;
+        }
+        
+        .third-h2:before {
+            background-image: url(img/3.svg);
+            animation: slideIn 1s ease 3s forwards;
         }
         
         .reg_wrap_mid {
@@ -66,6 +105,17 @@
         form>label:last-of-type {
             font-size: 10pt;
             padding-bottom: 30px;
+        }
+        
+        form>label:last-of-type a {
+            text-decoration: none;
+            color: #f73838;
+        }
+        
+        form>label:last-of-type a:hover {
+            border-bottom: 1px solid red;
+            padding-bottom: 2px;
+            text-decoration: none;
         }
         
         input,
@@ -137,6 +187,7 @@
             font-size: 13pt;
             letter-spacing: 4px;
             border-radius: 7px;
+            font-weight: 700;
         }
         
         footer {
@@ -171,8 +222,8 @@
                 width: 75%;
             }
             .reg_saturs_bottom {
-            width: 700px;
-        }
+                width: 700px;
+            }
         }
         
         @media (max-width: 950px) {
@@ -189,13 +240,19 @@
                 width: 90%;
             }
         }
+        
+        @media (max-width: 780px) {
+            .reg_wrap:first-of-type {
+                padding-top: 130px;
+            }
+        }
+
     </style>
 </head>
 
 <body>
-
     <header>
-        <div class="logo">MEŽĀŽI</div>
+        <img src="img/drawing.svg" alt="Mežāži">
         <nav>
             <ul>
                 <li><a href="https://mnemosx.github.io/mezazi/index.html">Sākums</a></li>
@@ -209,7 +266,7 @@
 
     <div class="reg_wrap">
         <div class="reg_nosauk">
-            <h2>Izvēlies datumu</h2>
+            <h2 class="first-h2">Izvēlies datumu</h2>
         </div>
         <div class="reg_saturs">
             <img class="kalendars" src="img/calendar.jpg">
@@ -220,7 +277,7 @@
 
     <div class="reg_wrap reg_wrap_mid">
         <div class="reg_nosauk">
-            <h2>Ievadi informāciju</h2>
+            <h2 class="second-h2">Ievadi informāciju</h2>
         </div>
         <div class="reg_saturs reg_saturs_mid">
 
@@ -258,7 +315,7 @@
 
     <div class="reg_wrap">
         <div class="reg_nosauk">
-            <h2>Brauc atpūsties</h2>
+            <h2 class="third-h2">Brauc atpūsties</h2>
         </div>
         <div class="reg_saturs reg_saturs_bottom">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac leo quis lorem mollis consequat ac suscipit mauris. Nulla consequat ipsum semper ex condimentum, sed blandit ligula tempor. In vehicula nisl vehicula est rutrum tincidunt. Aenean in gravida tellus. Suspendisse potenti.</p>
@@ -278,4 +335,5 @@
     </footer>
 
 </body>
+
 </html>
