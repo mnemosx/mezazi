@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        h3 {
+            padding: 30px;
+        }
+        
+        img {
+            width: 50%;
+        }
+        
+        .wrap {
+            text-align: center;
+        }
+        
+        h3 {
+            font-family: sans-serif;
+            font-weight: 300;
+            line-height: 1.6;
+            font-size: 16pt;
+        }
+        
+        button {
+            width: 220px;
+            height: 75px;
+            font-size: 12pt;
+            font-family: monospace;
+            font-weight: 700;
+            letter-spacing: 1px;
+            color: #2ecc71;
+            text-transform: uppercase;
+            border: solid #2ecc71 4px;
+            border-radius: 50px;
+            background-color: white;
+        }
+        button:hover {
+            cursor: pointer;
+            color: #0d9c4a;
+            border-color: #0d9c4a;
+            background-image: url(img/arrow.svg);
+            background-size: 20px;
+            background-repeat: no-repeat;
+            animation: animatedBackground 0.1s linear 1 forwards;
+        }
+        
+        @keyframes animatedBackground {
+            from {
+                background-position: 25% center;
+            }
+            to {
+                background-position: 15% center;
+            }
+        }
+
+    </style>
+
+    <body>
+        <div class="wrap">
+            <img src="img/ok.svg">
+            <h3>Pieteikums nosūtīts veiksmīgi!<br> Drīzumā Tu saņemsi no mums ziņu ar apstiprinājumu!</h3>
+            <button type="button" onclick="location.href='rezervacija.html'">Atpakaļ</button>
+        </div>
+    </body>
+
+</html>
