@@ -1,5 +1,4 @@
 @import url(//fonts.googleapis.com/css?family=Open+Sans:100,300,400,600);
-@import url(//weloveiconfonts.com/api/?family=brandico|entypo);
 * {
     margin: 0;
     padding: 0;
@@ -50,97 +49,6 @@ video#bgvid {
     text-decoration: none
 }
 
-[class*="entypo-"]:before {
-    font-family: 'entypo', sans-serif;
-    padding: 10px;
-}
-
-#kontaktu_info a {
-    color: white;
-    text-decoration: none;
-}
-
-#social a:hover {
-    color: #44c767;
-    cursor: pointer;
-}
-
-#kontaktu_info {
-    position: absolute;
-    float: left;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 300px;
-    height: 475px;
-    background: rgba(63, 83, 83, 0.87);
-    font-size: 1em;
-    padding: 15px;
-    z-index: 98;
-}
-
-#rekviz_wrap {
-    border-top: 1px solid #8e9699;
-    padding: 20px 0 20px 0;
-}
-
-#kont_info_wrap {
-    border-top: 1px solid #8e9699;
-    padding: 20px 0 20px 0;
-}
-
-#rekviz_wrap p {
-    font-size: .8em!important;
-}
-
-#kontaktu_info p {
-    font-size: 1em;
-    line-height: 1.6;
-    font-weight: 100;
-    color: #b1bec3;
-    font-family: 'Open Sans', sans-serif;
-    padding: 8px;
-}
-
-#kontaktu_info #social {
-    display: table;
-    width: 100%;
-    padding: 30px 0;
-}
-
-#kontaktu_info .social {
-    display: table-cell;
-    text-align: center;
-}
-
-.rezerv_poga {
-    background-color: #44c767;
-    -moz-border-radius: 1px;
-    -webkit-border-radius: 1px;
-    display: inline-block;
-    cursor: pointer;
-    color: #ffffff;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1em;
-    padding: 17px 35px;
-    text-decoration: none;
-    text-shadow: 0px -1px 6px #2f6627;
-}
-
-.rezerv_poga:hover {
-    background-color: #75b256;
-}
-
-.rezerv_poga:active {
-    position: relative;
-    top: 1px;
-}
-
-.btn_wrap {
-    text-align: center;
-    padding: 20px 0 10px 0;
-    border-top: 1px solid #8e9699;
-}
-
 
 /* ---------- HEADER --------- */
 
@@ -154,9 +62,10 @@ header {
 
 header img {
     display: inline-block;
-    height: 60px;
+    height: 50px;
     position: relative;
     left: 10%;
+    padding: 5px;
 }
 
 nav {
@@ -335,7 +244,7 @@ footer {
 }
 
 @media screen and (max-device-width: 800px) {
-  .sakums {
+    .sakums {
         background: url(beach.jpg) #000 no-repeat center center fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
@@ -354,6 +263,9 @@ footer {
     nav {
         margin-right: 5%;
     }
+    footer {
+        width: 90%;
+    }
 }
 
 @media (max-width: 780px) {
@@ -371,5 +283,15 @@ footer {
         margin: 0 auto;
         top: 11px;
         text-align: center;
+    }
+}
+
+@media (max-width: 700px) {
+    #right-nav {
+        float: none;
+        display: block;
+    }
+    #left-text {
+        display: block;
     }
 }

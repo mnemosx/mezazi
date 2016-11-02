@@ -3,8 +3,9 @@
 
 <head>
     <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">    
-<link rel="stylesheet" href="stylesheet.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>Mežāži | Rezervācija</title>
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,500" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel='stylesheet' type='text/css'>
@@ -50,31 +51,9 @@
             content: "";
         }
         
-        @keyframes slideIn {
-            0% {
-                transform: translateX(-1200px);
-                opacity: 0;
-            }
-            100% {
-                transform: translateX(0);
-                opacity: 1;
-            }
-        }
-        /*@-webkit-keyframes slideIn {
-            0% {
-                -webkit-transform: translateX(-1200px);
-                -webkit-opacity: 0;
-            }
-            100% {
-                -webkit-transform: translateX(0);
-                -webkit-opacity: 1;
-            }
-        }*/
-        
         .first-h2:before {
             background-image: url(img/1.svg);
             animation: slideIn 1s ease 1s forwards;
-            /*-webkit-animation: slideIn 1s ease 1s forwards;*/
         }
         
         .second-h2:before {
@@ -85,6 +64,17 @@
         .third-h2:before {
             background-image: url(img/3.svg);
             animation: slideIn 1s ease 3s forwards;
+        }
+        
+        @keyframes slideIn {
+            0% {
+                transform: translateX(-900px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateX(0);
+                opacity: 1;
+            }
         }
         
         .reg_wrap_mid {
@@ -248,9 +238,6 @@
             .reg_saturs_bottom {
                 width: 70%;
             }
-            footer {
-                width: 90%;
-            }
         }
         
         @media (max-width: 780px) {
@@ -264,7 +251,7 @@
 
 <body>
     <header>
-        <img src="img/drawing.svg" alt="Mežāži">
+        <a href="https://mnemosx.github.io/mezazi"><img src="img/drawing.svg" alt="Mežāži"></a>
         <nav>
             <ul>
                 <li><a href="https://mnemosx.github.io/mezazi/index.html">Sākums</a></li>
