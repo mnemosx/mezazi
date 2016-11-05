@@ -2,268 +2,377 @@
 <html>
 
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="stylesheet.css">
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
-    <link href="//fonts.googleapis.com/css?family=Raleway:300,500" rel="stylesheet">
-    <link href="//fonts.googleapis.com/css?family=Roboto:300" rel='stylesheet' type="text/css">
-    <title>Mežāži | Kontakti</title>
-    <style>
-        .kontaktu_info {
-            position: absolute;
-            float: left;
-            top: 50%;
-            transform: translateY(-50%);
-            width: 300px;
-            background: rgba(63, 83, 83, 0.87);
-            font-size: 1em;
-            padding: 15px;
-            z-index: 98;
-        }
-        
-        .rekviz_wrap,
-        .kont_info_wrap {
-            border-top: 1px solid #8e9699;
-            padding: 20px 0 20px 0;
-        }
-        
-        .rekviz_wrap p {
-            font-size: 11pt!important;
-        }
-        
-        .kontaktu_info p {
-            font-size: 18pt;
-            line-height: 1.6;
-            font-weight: 100;
-            color: #e3e7e8;
-            font-family: 'Open Sans', sans-serif;
-            padding: 8px;
-        }
-        
-        .kontaktu_info .social {
-            width: 100%;
-            padding: 30px 0;
-            text-align: center;
-        }
-        
-        .social {
-            width: 100%;
-            margin: 0 auto;
-        }
-        
-        .social img {
-            height: 40px;
-            padding: 0 25px;
-        }
-        
-        .social img:hover {
-            animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
-            transform: translate3d(0, 0, 0);
-            backface-visibility: hidden;
-            perspective: 1000px;
-        }
-        
-        @keyframes shake {
-            10%,
-            90% {
-                transform: translate3d(-1px, 0, 0);
-            }
-            20%,
-            80% {
-                transform: translate3d(2px, 0, 0);
-            }
-            30%,
-            50%,
-            70% {
-                transform: translate3d(-4px, 0, 0);
-            }
-            40%,
-            60% {
-                transform: translate3d(4px, 0, 0);
-            }
-        }
-        
-        .rezerv_poga {
-            background-color: #12d665;
-            border-radius: 1px;
-            display: inline-block;
-            cursor: pointer;
-            color: #ffffff;
-            border-radius: 5px;
-            font-family: 'Open Sans', sans-serif;
-            font-size: 1em;
-            padding: 27px 35px;
-            text-decoration: none;
-            text-shadow: 0px -1px 6px #2f6627;
-        }
-        
-        .rezerv_poga:hover {
-            background-color: #75b256;
-        }
-        
-        .rezerv_poga:active {
-            position: relative;
-            top: 1px;
-        }
-        
-        .btn_wrap {
-            text-align: center;
-            padding: 30px 0 15px 0;
-            border-top: 1px solid #8e9699;
-        }
-        
-        .kontaktu-telefons:before {
-            display: inline-block;
-            content: "";
-            background: url(img/icons/phone.svg) no-repeat;
-            background-size: 20px 20px;
-            height: 20px;
-            width: 20px;
-            padding-right: 15px;
-        }
-        
-        .kontaktu-adrese:before {
-            display: inline-block;
-            content: "";
-            background: url(img/icons/Home.svg) no-repeat;
-            background-size: 20px 20px;
-            height: 20px;
-            width: 20px;
-            padding-right: 15px;
-        }
-        
-        .kontaktu-epasts:before {
-            display: inline-block;
-            content: "";
-            background: url(img/icons/mail.svg) no-repeat;
-            background-size: 20px 20px;
-            height: 20px;
-            width: 20px;
-            padding-right: 15px;
-        }
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="stylesheet.css">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href="//fonts.googleapis.com/css?family=Raleway:300,500" rel="stylesheet">
+	<link href="//fonts.googleapis.com/css?family=Roboto:300" rel='stylesheet' type="text/css">
+	<title>Mežāži | Kontakti</title>
+	<style>
+		html {
+			min-width: 281px;
+		}
+		
+		.kontaktu_info {
+			position: absolute;
+			float: left;
+			top: 50%;
+			transform: translateY(-50%);
+			width: 300px;
+			background: rgba(63, 83, 83, 0.87);
+			font-size: 1em;
+			padding: 15px;
+			z-index: 98;
+		}
+		
+		.rekviz_wrap,
+		.kont_info_wrap {
+			border-top: 1px solid #8e9699;
+			padding: 20px 0;
+		}
+		
+		.rekviz_wrap p {
+			font-size: 11pt!important;
+		}
+		
+		.kontaktu_info p {
+			font-size: 18pt;
+			line-height: 1.6;
+			font-weight: 100;
+			color: #e3e7e8;
+			font-family: 'Open Sans', sans-serif;
+			padding: 8px;
+		}
+		
+		.kontaktu_info .social {
+			width: 100%;
+			padding: 30px 0;
+			text-align: center;
+		}
+		
+		.social {
+			width: 100%;
+			margin: 0 auto;
+		}
+		
+		.social img {
+			height: 40px;
+			padding: 0 25px;
+		}
+		
+		.social img:hover {
+			animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
+			transform: translate3d(0, 0, 0);
+			backface-visibility: hidden;
+			perspective: 1000px;
+		}
+		
+		@keyframes shake {
+			10%,
+			90% {
+				transform: translate3d(-1px, 0, 0);
+			}
+			20%,
+			80% {
+				transform: translate3d(2px, 0, 0);
+			}
+			30%,
+			50%,
+			70% {
+				transform: translate3d(-4px, 0, 0);
+			}
+			40%,
+			60% {
+				transform: translate3d(4px, 0, 0);
+			}
+		}
+		
+		.rezerv_poga {
+			background-color: #12d665;
+			border-radius: 1px;
+			display: inline-block;
+			cursor: pointer;
+			color: #ffffff;
+			border-radius: 5px;
+			font-family: 'Open Sans', sans-serif;
+			font-size: 1em;
+			padding: 27px 35px;
+			text-decoration: none;
+			text-shadow: 0px -1px 6px #2f6627;
+		}
+		
+		.rezerv_poga:hover {
+			background-color: #75b256;
+		}
+		
+		.rezerv_poga:active {
+			position: relative;
+			top: 1px;
+		}
+		
+		.btn_wrap {
+			text-align: center;
+			padding: 30px 0 15px 0;
+			border-top: 1px solid #8e9699;
+		}
+		
+		.kontaktu-telefons:before {
+			display: inline-block;
+			content: "";
+			background: url(img/icons/phone.svg) no-repeat;
+			background-size: 20px 20px;
+			height: 20px;
+			width: 20px;
+			padding-right: 15px;
+			vertical-align: middle;
+		}
+		
+		.kontaktu-adrese:before {
+			display: inline-block;
+			content: "";
+			background: url(img/icons/Home.svg) no-repeat;
+			background-size: 20px 20px;
+			height: 20px;
+			width: 20px;
+			padding-right: 15px;
+			vertical-align: middle;
+		}
+		
+		.kontaktu-epasts:before {
+			display: inline-block;
+			content: "";
+			background: url(img/icons/mail.svg) no-repeat;
+			background-size: 20px 20px;
+			height: 20px;
+			width: 20px;
+			padding-right: 15px;
+			vertical-align: middle;
+		}
+		
+		.gradient {
+			background: linear-gradient( to top, rgb(255, 255, 255), rgba(0, 0, 0, 0));
+			height: 200px;
+			width: 100%;
+			position: absolute;
+			bottom: 0;
+		}
+		
+		footer a,
+		#left-text {
+			color: #31314b;
+			text-shadow: 0 0 25px #0000;
+		}
+		
+		@media (max-width: 780px) {
+			.kontaktu_info {
+				width: 200px;
+			}
+			.kontaktu_info p {
+				font-size: 13pt;
+				line-height: 1;
+			}
+			.social img {
+				height: 30px;
+				padding: 0 15px;
+			}
+			.rezerv_poga {
+				padding: 17px 15px;
+			}
+		}
+		
+		@media (max-width: 520px) {
+			.kontaktu_info {
+				width: 100%;
+				top: 393px;
+				text-align: center;
+				padding: 0;
+				margin: 0;
+			}
+			#map {
+				height: 520px;
+				top: 606px;
+			}
+			.social img {
+				height: 30px;
+				padding: 20px 11% 5px 11%;
+			}
+			.kontaktu_info>.social {
+				padding: 5px 0 15px 0;
+			}
+			.kontaktu-telefons:before,
+			.kontaktu-adrese:before,
+			.kontaktu-epasts:before {
+				display: block;
+				margin: 5px auto 15px auto;
+			}
+			.kontaktu-telefons,
+			.kontaktu-adrese,
+			.kontaktu-epasts {
+				display: inline-block;
+				margin: 0;
+			}
+			.kontaktu_info p {
+				font-size: 3vw;
+			}
+			.kont_info_wrap {
+				padding: 15px 0;
+				margin: 0;
+			}
+			.btn_wrap {
+				padding-bottom: 30px;
+			}
+			.gradient,
+			footer {
+				display: none;
+			}
+		}
+		
+		@media (max-width: 342px) {
+			.kontaktu_info {
+				top: 361px;
+			}
+			#map {
+				top: 571px;
+			}
+		}
 
-    </style>
+	</style>
 </head>
 
 <body>
+	<div class="page-wrap">
+		<header>
+			<a href="https://mnemosx.github.io/mezazi"><img src="img/drawing.svg" alt="Mežāži"></a>
+			<nav>
+				<ul>
+					<li><a href="https://mnemosx.github.io/mezazi/index.html"><i class="fa fa-home"></i>Sākums</a></li>
+					<li><a href="https://mnemosx.github.io/mezazi/par-mums.html"><i class="fa fa-users"></i>Par mums</a></li>
+					<li><a href="https://mnemosx.github.io/mezazi/rezervacija.html"><i class="fa fa-pencil-square-o"></i>Rezervācija</a></li>
+					<li><a href="https://mnemosx.github.io/mezazi/atsauksmes.html"><i class="fa fa-comments"></i>Atsauksmes</a></li>
+					<li><a href="https://mnemosx.github.io/mezazi/kontakti.html"><i class="fa fa-map-marker"></i>Kontakti</a></li>
+				</ul>
+			</nav>
+		</header>
 
-    <header>
-        <a href="https://mnemosx.github.io/mezazi"><img src="img/drawing.svg" alt="Mežāži"></a>
-        <nav>
-            <ul>
-                <li><a href="https://mnemosx.github.io/mezazi/index.html">Sākums</a></li>
-                <li><a href="https://mnemosx.github.io/mezazi/par-mums.html">Par mums</a></li>
-                <li><a href="https://mnemosx.github.io/mezazi/rezervacija.html">Rezervācija</a></li>
-                <li><a href="https://mnemosx.github.io/mezazi/atsauksmes.html">Atsauksmes</a></li>
-                <li><a href="https://mnemosx.github.io/mezazi/kontakti.html">Kontakti</a></li>
-            </ul>
-        </nav>
-    </header>
+		<div class="kontaktu_info">
+			<div class="social">
+				<a href="//facebook.com"><img src="img/icons/facebook.svg" alt="Seko mums Facebook!"></a>
+				<a href="//draugiem.lv"><img src="img/icons/draugiem.svg" alt="Seko mums draugiem.lv!"></a>
+				<a href="//instagram.com"><img src="img/icons/instagram.svg" alt="seko mums Instagram!"></a>
+			</div>
 
-    <div class="kontaktu_info">
-        <div class="social">
-            <a href="//facebook.com"><img src="img/icons/facebook.svg" alt="Seko mums Facebook!"></a>
-            <a href="//draugiem.lv"><img src="img/icons/draugiem.svg" alt="Seko mums draugiem.lv!"></a>
-            <a href="//instagram.com"><img src="img/icons/instagram.svg" alt="seko mums Instagram!"></a>
-        </div>
+			<div class="kont_info_wrap">
+				<p class="kontaktu-telefons">+371 29212105</p>
+				<p class="kontaktu-epasts">mezazi@gmail.com</p>
+				<p class="kontaktu-adrese">Zaļā iela 3, Siguļi</p>
+			</div>
 
-        <div class="kont_info_wrap">
-            <p class="kontaktu-telefons">+371 29212105</p>
-            <p class="kontaktu-epasts">mezazi@gmail.com</p>
-            <p class="kontaktu-adrese">Zaļā iela 3, Siguļi</p>
-        </div>
+			<div class="rekviz_wrap">
+				<p>Konta Nr.: LV89HABA16584651654656</p>
+				<p>Banka: Swedbank</p>
+				<p>Reģ. Nr.: 80016545464</p>
+			</div>
 
-        <div class="rekviz_wrap">
-            <p>Konta Nr.: LV89HABA16584651654656</p>
-            <p>Banka: Swedbank</p>
-            <p>Reģ. Nr.: 80016545464</p>
-        </div>
+			<div class="btn_wrap"><a href="https://mnemosx.github.io/mezazi/rezervacija.html" class="rezerv_poga">Veikt rezervāciju</a></div>
+		</div>
 
-        <div class="btn_wrap"><a href="https://mnemosx.github.io/mezazi/rezervacija.html" class="rezerv_poga">Veikt rezervāciju</a></div>
-    </div>
+	</div>
+	<div id="map"></div>
+
+	<div class="gradient"></div>
+
+	<footer>
+		<div id="left-text">&copy;2016 Developed by: <a href="#">Andis</a> </div>
+		<div id="right-nav">
+			<a href="#">Noteikumi</a>
+			<a href="#">BUJ</a>
+			<a href="#">Facebook</a>
+			<a href="#">draugiem.lv</a>
+		</div>
+	</footer>
 
 
-    <div id="map"></div>
-    <script>
-        var map;
+	<script>
+		var map;
 
-        function initMap() {
-            var map = new google.maps.Map(document.getElementById('map'), {
-                center: {
-                    lat: 57.071333,
-                    lng: 24.160454
-                },
-                zoom: 11,
-                disableDefaultUI: true,
-                styles: [{
-                    featureType: 'all',
-                    stylers: [{
-                        saturation: -80
-                    }]
-                }, {
-                    featureType: 'road',
-                    elementType: 'geometry',
-                    stylers: [{
-                        hue: '#0e045c'
-                    }, {
-                        saturation: 20
-                    }]
-                }, {
-                    featureType: 'road',
-                    elementType: 'labels',
-                    stylers: [{
-                        visibility: 'on'
-                    }]
-                }, {
-                    featureType: 'administrative.province',
-                    elementType: 'all',
-                    stylers: [{
-                        visibility: 'off'
-                    }]
-                }, {
-                    featureType: 'poi.business',
-                    elementType: 'labels',
-                    stylers: [{
-                        visibility: 'off'
-                    }]
-                }, {
-                    featureType: 'transit.line',
-                    elementType: 'geometry',
-                    stylers: [{
-                        visibility: 'off'
-                    }]
-                }]
-            });
+		function initMap() {
+			var map = new google.maps.Map(document.getElementById('map'), {
+				center: {
+					lat: 57.071333,
+					lng: 24.160454
+				},
+				zoom: 11,
+				disableDefaultUI: true,
+				styles: [{
+					featureType: 'all',
+					stylers: [{
+						saturation: -80
+					}]
+				}, {
+					featureType: 'road',
+					elementType: 'geometry',
+					stylers: [{
+						hue: '#0e045c'
+					}, {
+						saturation: 20
+					}]
+				}, {
+					featureType: 'road',
+					elementType: 'labels',
+					stylers: [{
+						visibility: 'on'
+					}]
+				}, {
+					featureType: 'administrative.province',
+					elementType: 'all',
+					stylers: [{
+						visibility: 'off'
+					}]
+				}, {
+					featureType: 'poi.business',
+					elementType: 'labels',
+					stylers: [{
+						visibility: 'off'
+					}]
+				}, {
+					featureType: 'transit.line',
+					elementType: 'geometry',
+					stylers: [{
+						visibility: 'off'
+					}]
+				}]
+			});
 
-            marker = new google.maps.Marker({
-                position: {
-                    lat: 57.123109,
-                    lng: 24.318968
-                },
-                map: map,
-                animation: google.maps.Animation.BOUNCE,
-            });
-            var contentString = '<div id="map_pointer">' +
-                '<a href="https://goo.gl/maps/r92PFiwnN1S2" target="_blank">Plānot maršrutu Google kartē</a>' +
-                '</div>';
-            marker.addListener('mouseout', function() {
-                t = setTimeout(function() {
-                    infowindow.close()
-                }, 2000);
-            });
+			marker = new google.maps.Marker({
+				position: {
+					lat: 57.123109,
+					lng: 24.318968
+				},
+				map: map,
+				animation: google.maps.Animation.BOUNCE,
+			});
+			var contentString = '<div id="map_pointer">' +
+				'<a href="https://goo.gl/maps/r92PFiwnN1S2" target="_blank">Plānot maršrutu Google kartē</a>' +
+				'</div>';
+			marker.addListener('mouseout', function() {
+				t = setTimeout(function() {
+					infowindow.close()
+				}, 2000);
+			});
 
-            var infowindow = new google.maps.InfoWindow({
-                content: contentString
-            });
+			var infowindow = new google.maps.InfoWindow({
+				content: contentString
+			});
 
-            google.maps.event.addListener(marker, 'mouseover', function() {
-                infowindow.open(map, marker);
-            });
-        }
+			google.maps.event.addListener(marker, 'mouseover', function() {
+				infowindow.open(map, marker);
+			});
+		}
 
-    </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCOW4408WVR9yCSFuOZuTRucpxK5DsdfGg&callback=initMap" async defer></script>
+	</script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCOW4408WVR9yCSFuOZuTRucpxK5DsdfGg&callback=initMap" async defer></script>
 </body>
 
 </html>

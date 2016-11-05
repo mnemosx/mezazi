@@ -2,339 +2,388 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="stylesheet.css">
-    <title>Mežāži | Rezervācija</title>
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:300,500" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel='stylesheet' type='text/css'>
-    <style>
-        html {
-            overflow: auto;
-        }
-        
-        .reg_wrap {
-            text-align: center;
-            width: 100%;
-        }
-        
-        .reg_wrap:first-of-type {
-            padding-top: 60px;
-        }
-        
-        .reg_saturs {
-            text-align: center;
-            margin: 0 auto;
-            width: 80%;
-        }
-        
-        .reg_saturs_mid {
-            margin: 0 auto;
-            width: 60%;
-        }
-        
-        .reg_nosauk {
-            font-family: Raleway, 'sans-serif';
-            padding: 30px;
-        }
-        
-        .reg_nosauk h2:before {
-            background-size: 40px 40px;
-            display: inline-block;
-            width: 40px;
-            height: 40px;
-            position: relative;
-            top: 12px;
-            right: 10px;
-            opacity: 0;
-            content: "";
-        }
-        
-        .first-h2:before {
-            background-image: url(img/1.svg);
-            animation: slideIn 1s ease 1s forwards;
-        }
-        
-        .second-h2:before {
-            background-image: url(img/2.svg);
-            animation: slideIn 1s ease 2s forwards;
-        }
-        
-        .third-h2:before {
-            background-image: url(img/3.svg);
-            animation: slideIn 1s ease 3s forwards;
-        }
-        
-        @keyframes slideIn {
-            0% {
-                transform: translateX(-900px);
-                opacity: 0;
-            }
-            100% {
-                transform: translateX(0);
-                opacity: 1;
-            }
-        }
-        
-        .reg_wrap_mid {
-            background-color: #efefef;
-        }
-        
-        .kalendars {
-            display: inline;
-            margin: 0 auto;
-            width: 230px;
-            padding-bottom: 40px;
-        }
-        
-        form {
-            display: block;
-            width: 600px;
-            margin: 0 auto;
-        }
-        
-        label {
-            float: left;
-            width: 44%;
-            text-align: right;
-            margin-right: 5%;
-            font-family: Raleway, "sans-serif";
-            padding-top: 7px;
-            font-size: 16pt;
-        }
-        
-        form>label:last-of-type {
-            font-size: 10pt;
-            padding-bottom: 30px;
-        }
-        
-        form>label:last-of-type a {
-            text-decoration: none;
-            color: #f73838;
-        }
-        
-        form>label:last-of-type a:hover {
-            border-bottom: 1px solid red;
-            padding-bottom: 2px;
-            text-decoration: none;
-        }
-        
-        input,
-        textarea {
-            display: block;
-            width: 50%;
-            margin: 5px;
-            font-family: sans-serif;
-            font-size: 18px;
-            appearance: none;
-            box-shadow: none;
-            border-radius: none;
-            padding: 10px 0;
-            border: none;
-            border-bottom: solid 2px #c9c9c9;
-            transition: border 0.3s;
-        }
-        
-        textarea {
-            font-size: 12pt;
-            height: 100px;
-            max-width: 50%;
-        }
-        
-        input[type="text"]:focus,
-        input[type="tel"]:focus,
-        input[type="email"]:focus,
-        input[type="number"]:focus,
-        input[type="date"]:focus,
-        textarea:focus {
-            outline: none;
-            border-bottom: solid 2px #969696;
-        }
-        
-        input[type="checkbox"] {
-            display: inline-block;
-            width: auto;
-        }
-        
-        label[for="just-checking"] {
-            float: right;
-            width: 100%;
-        }
-        
-        .required input {
-            background: #ffffff url(img/asterisk.svg) 97% 50%/10px 10px no-repeat;
-        }
-        
-        .reg_saturs_bottom {
-            width: 700px;
-        }
-        
-        .reg_saturs_bottom p {
-            font-family: Raleway, "sans-serif";
-        }
-        /* ŠIM JĀPALIEK IEKŠ ŠĪ HTML STYLE, LAI IZMANTOTU TO PAŠU POGU, KAS SĀKUMA LAPĀ, TIKAI AR CITU IKONU */
-        
-        .reg-btn:after {
-            content: "\F00c";
-        }
-        
-        .reg-btn:hover:after {
-            -webkit-animation: bounceup .3s alternate ease infinite;
-            animation: bounceup .3s alternate ease infinite;
-        }
-        
-        .reg-btn {
-            margin: 40px 0 190px 0;
-            font-size: 13pt;
-            letter-spacing: 4px;
-            border-radius: 7px;
-            font-weight: 700;
-        }
-        
-        footer {
-            position: relative;
-        }
-        /* END */
-        
-        .clearfix {
-            overflow: auto;
-        }
-        
-        @-webkit-keyframes bounceup {
-            from {
-                -webkit-transform: translateY(0);
-            }
-            to {
-                -webkit-transform: translateY(3px);
-            }
-        }
-        
-        @keyframes bounceup {
-            from {
-                transform: translateY(0);
-            }
-            to {
-                transform: translateY(3px);
-            }
-        }
-        
-        @media (max-width: 1380px) {
-            .reg_saturs {
-                width: 75%;
-            }
-            .reg_saturs_bottom {
-                width: 700px;
-            }
-        }
-        
-        @media (max-width: 950px) {
-            .kalendars {
-                width: 32%;
-            }
-            form {
-                width: 80%;
-            }
-            .reg_saturs_bottom {
-                width: 70%;
-            }
-        }
-        
-        @media (max-width: 780px) {
-            .reg_wrap:first-of-type {
-                padding-top: 130px;
-            }
-        }
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="stylesheet.css">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	<title>Mežāži | Rezervācija</title>
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:300,500" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300" rel='stylesheet' type='text/css'>
+	<style>
+			html {
+			overflow: auto;
+			height: 100%;
+		}
+		
+		body {
+			height: 100%;
+		}
+		
+		.page-wrap {
+			min-height: 100%;
+			margin-bottom: -25px;
+		}
+		
+		.page-wrap:after {
+			content: "";
+			display: block;
+		}
+		
+		footer,
+		.page-wrap:after {
+			height: 10px;
+			position: relative;
+		}
+		
+		.reg_wrap {
+			text-align: center;
+			width: 100%;
+		}
+		
+		.reg_wrap:first-of-type {
+			padding-top: 60px;
+		}
+		
+		.reg_saturs {
+			text-align: center;
+			margin: 0 auto;
+			width: 80%;
+		}
+		
+		.reg_saturs_mid {
+			margin: 0 auto;
+			width: 60%;
+		}
+		
+		.reg_nosauk {
+			font-family: Raleway, 'sans-serif';
+			padding: 30px;
+		}
+		
+		.reg_nosauk h2:before {
+			background-size: 40px 40px;
+			display: inline-block;
+			width: 40px;
+			height: 40px;
+			position: relative;
+			top: 12px;
+			right: 10px;
+			opacity: 0;
+			content: "";
+		}
+		
+		.first-h2:before {
+			background-image: url(img/1.svg);
+			animation: slideIn 1s ease 1s forwards;
+		}
+		
+		.second-h2:before {
+			background-image: url(img/2.svg);
+			animation: slideIn 1s ease 2s forwards;
+		}
+		
+		.third-h2:before {
+			background-image: url(img/3.svg);
+			animation: slideIn 1s ease 3s forwards;
+		}
+		
+		@keyframes slideIn {
+			0% {
+				transform: translateX(-900px);
+				opacity: 0;
+			}
+			100% {
+				transform: translateX(0);
+				opacity: 1;
+			}
+		}
+		
+		.reg_wrap_mid {
+			background-color: #efefef;
+		}
+		
+		.kalendars {
+			display: inline;
+			margin: 0 auto;
+			width: 230px;
+			padding-bottom: 40px;
+		}
+		
+		form {
+			display: block;
+			width: 600px;
+			margin: 0 auto;
+		}
+		
+		label {
+			float: left;
+			width: 44%;
+			text-align: right;
+			margin-right: 5%;
+			font-family: Raleway, "sans-serif";
+			padding-top: 7px;
+			font-size: 16pt;
+		}
+		
+		form>label:last-of-type {
+			font-size: 10pt;
+			padding-bottom: 30px;
+			margin-right: 5px;
+			float: right;
+			width: 100%;
+		}
+		
+		form>label:last-of-type a {
+			text-decoration: none;
+			color: #f73838;
+		}
+		
+		form>label:last-of-type a:hover {
+			border-bottom: 1px solid red;
+			padding-bottom: 2px;
+			text-decoration: none;
+		}
+		
+		input,
+		textarea {
+			display: block;
+			width: 50%;
+			margin: 5px;
+			font-family: sans-serif;
+			font-size: 18px;
+			padding: 10px 0;
+			border: none;
+			border-bottom: solid 2px #c9c9c9;
+			transition: border 0.3s;
+		}
+		
+		textarea {
+			font-size: 12pt;
+			height: 100px;
+			max-width: 50%;
+		}
+		
+		input[type="date"]::-webkit-inner-spin-button,
+		input[type="date"]::-webkit-clear-button {
+			display: none;
+		}
+		
+		input[type="text"]:focus,
+		input[type="tel"]:focus,
+		input[type="email"]:focus,
+		input[type="number"]:focus,
+		input[type="date"]:focus,
+		textarea:focus {
+			outline: none;
+			border-bottom: solid 2px #969696;
+		}
+		
+		input[type="checkbox"] {
+			display: inline;
+			width: 14px;
+			vertical-align: middle;
+		}
+		
+		.required input {
+			background: #ffffff url(img/asterisk.svg) 97% 50%/10px 10px no-repeat;
+		}
+		
+		.reg_saturs_bottom {
+			width: 700px;
+		}
+		
+		.reg_saturs_bottom p {
+			font-family: Raleway, "sans-serif";
+		}
+		/* ŠIM pagaidām JĀPALIEK IEKŠ ŠĪ HTML STYLE, LAI IZMANTOTU TO PAŠU POGU, KAS SĀKUMA LAPĀ, TIKAI AR CITU IKONU */
+		
+		.reg-btn:after {
+			content: "\F00c";
+		}
+		
+		.reg-btn:hover:after {
+			-webkit-animation: bounceup .3s alternate ease infinite;
+			animation: bounceup .3s alternate ease infinite;
+		}
+		
+		.reg-btn {
+			margin: 40px 0 190px 0;
+			font-size: 13pt;
+			letter-spacing: 4px;
+			border-radius: 7px;
+			font-weight: 700;
+		}
+		
+		footer a,
+		#left-text {
+			color: #31314b;
+		}
+		/* END */
+		
+		.clearfix {
+			overflow: auto;
+		}
+		
+		@-webkit-keyframes bounceup {
+			from {
+				-webkit-transform: translateY(0);
+			}
+			to {
+				-webkit-transform: translateY(3px);
+			}
+		}
+		
+		@keyframes bounceup {
+			from {
+				transform: translateY(0);
+			}
+			to {
+				transform: translateY(3px);
+			}
+		}
+		
+		@media (max-width: 1380px) {
+			.reg_saturs {
+				width: 75%;
+			}
+			.reg_saturs_bottom {
+				width: 700px;
+			}
+		}
+		
+		@media (max-width: 950px) {
+			.kalendars {
+				width: 32%;
+			}
+			form {
+				width: 80%;
+			}
+			.reg_saturs_bottom {
+				width: 70%;
+			}
+		}
+		
+		@media (max-width: 780px) {
+			.reg_wrap:first-of-type {
+				padding-top: 130px;
+			}
+		}
+		
+		@media (max-width: 600px) {
+			label,
+			input,
+			textarea {
+				display: block;
+				float: none;
+				width: 98%;
+				max-width: 98%;
+			}
+			form {
+				width: 100%;
+			}
+			.kalendars:nth-child(n + 2) {
+				display: none;
+			}
+			.kalendars {
+				width: 300px;
+			}
+		}
+		
+		@media (max-width: 520px) {
+			.reg_wrap:first-of-type {
+				padding-top: 180px;
+			}
 
-    </style>
+	</style>
 </head>
 
 <body>
-    <header>
-        <a href="https://mnemosx.github.io/mezazi"><img src="img/drawing.svg" alt="Mežāži"></a>
-        <nav>
-            <ul>
-                <li><a href="https://mnemosx.github.io/mezazi/index.html">Sākums</a></li>
-                <li><a href="https://mnemosx.github.io/mezazi/par-mums.html">Par mums</a></li>
-                <li><a href="https://mnemosx.github.io/mezazi/rezervacija.html">Rezervācija</a></li>
-                <li><a href="https://mnemosx.github.io/mezazi/atsauksmes.html">Atsauksmes</a></li>
-                <li><a href="https://mnemosx.github.io/mezazi/kontakti.html">Kontakti</a></li>
-            </ul>
-        </nav>
-    </header>
+	<div class="page-wrap">
+		<header>
+			<a href="https://mnemosx.github.io/mezazi"><img src="img/drawing.svg" alt="Mežāži"></a>
+			<nav>
+				<ul>
+					<li><a href="https://mnemosx.github.io/mezazi/index.html"><i class="fa fa-home"></i>Sākums</a></li>
+					<li><a href="https://mnemosx.github.io/mezazi/par-mums.html"><i class="fa fa-users"></i>Par mums</a></li>
+					<li><a href="https://mnemosx.github.io/mezazi/rezervacija.html"><i class="fa fa-pencil-square-o"></i>Rezervācija</a></li>
+					<li><a href="https://mnemosx.github.io/mezazi/atsauksmes.html"><i class="fa fa-comments"></i>Atsauksmes</a></li>
+					<li><a href="https://mnemosx.github.io/mezazi/kontakti.html"><i class="fa fa-map-marker"></i>Kontakti</a></li>
+				</ul>
+			</nav>
+		</header>
 
-    <div class="reg_wrap">
-        <div class="reg_nosauk">
-            <h2 class="first-h2">Izvēlies datumu</h2>
-        </div>
-        <div class="reg_saturs">
-            <img class="kalendars" src="img/calendar.jpg">
-            <img class="kalendars" src="img/calendar.jpg">
-            <img class="kalendars" src="img/calendar.jpg">
-        </div>
-    </div>
+		<div class="reg_wrap">
+			<div class="reg_nosauk">
+				<h2 class="first-h2">Izvēlies datumu</h2>
+			</div>
+			<div class="reg_saturs">
+				<img class="kalendars" src="img/calendar.jpg">
+				<img class="kalendars" src="img/calendar.jpg">
+				<img class="kalendars" src="img/calendar.jpg">
+			</div>
+		</div>
 
-    <div class="reg_wrap reg_wrap_mid">
-        <div class="reg_nosauk">
-            <h2 class="second-h2">Ievadi informāciju</h2>
-        </div>
-        <div class="reg_saturs reg_saturs_mid">
+		<div class="reg_wrap reg_wrap_mid">
+			<div class="reg_nosauk">
+				<h2 class="second-h2">Ievadi informāciju</h2>
+			</div>
+			<div class="reg_saturs reg_saturs_mid">
 
-            <form class="clearfix" action="https://formspree.io/mnemosx@gmail.com" method="POST" id="reg-form">
-                <div class="required">
-                    <label for="vards">Vārds, Uzvārds:</label>
-                    <input id="vards" type="text" name="Vārds" required>
-                </div>
+				<form class="clearfix" action="https://formspree.io/mnemosx@gmail.com" method="POST" id="reg-form">
+					<div class="required">
+						<label for="vards">Vārds, Uzvārds:</label>
+						<input id="vards" type="text" name="Vārds" required>
+					</div>
 
-                <div class="required">
-                    <label for="tel">Tālrunis:</label>
-                    <input id="tel" type="tel" name="Tālrunis" required>
-                </div>
+					<div class="required">
+						<label for="tel">Tālrunis:</label>
+						<input id="tel" type="tel" name="Tālrunis" required>
+					</div>
 
-                <div class="required">
-                    <label for="epasts">E-pasts:</label>
-                    <input id="epasts" type="email" name="_replyto" required>
-                </div>
+					<div class="required">
+						<label for="epasts">E-pasts:</label>
+						<input id="epasts" type="email" name="_replyto" required>
+					</div>
 
-                <label for="skaits">Viesu skaits:</label>
-                <input id="skaits" type="number" name="Viesu skaits">
+					<label for="skaits">Viesu skaits:</label>
+					<input id="skaits" type="number" min="1" max="20" name="Viesu skaits">
 
-                <label for="datums">Datums:</label>
-                <input id="datums" type="date" min="2016-11-01" max="2018-11-01" name="Datums">
+					<label for="datums">Datums:</label>
+					<input id="datums" type="date" min="2016-11-01" max="2018-11-01" name="Datums">
 
-                <label for="papildu-info"> Vēlies ko piebilst?</label>
-                <textarea id="papildu-info" name="Papildu info" placeholder="Norādi papildu informāciju"></textarea>
+					<label for="papildu-info"> Vēlies ko piebilst?</label>
+					<textarea id="papildu-info" name="Papildu info" placeholder="Norādi papildu informāciju"></textarea>
 
-                <label for="just-checking">
+					<label for="just-checking">
                 <input id="just-checking" type="checkbox" value="" required> Ar rezervācijas <a href="noteikumi.html">noteikumiem</a> esmu iepazinies.
                 </label>
-                <input type="text" name="_gotcha" style="display:none">
-                <input type="hidden" name="_next" value="//mnemosx.github.io/mezazi/thanks.html">
-            </form>
-        </div>
-    </div>
+					<input type="text" name="_gotcha" style="display:none">
+					<input type="hidden" name="_next" value="//mnemosx.github.io/mezazi/thanks.html">
+				</form>
+			</div>
+		</div>
 
-    <div class="reg_wrap">
-        <div class="reg_nosauk">
-            <h2 class="third-h2">Brauc atpūsties</h2>
-        </div>
-        <div class="reg_saturs reg_saturs_bottom">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac leo quis lorem mollis consequat ac suscipit mauris. Nulla consequat ipsum semper ex condimentum, sed blandit ligula tempor. In vehicula nisl vehicula est rutrum tincidunt. Aenean in gravida tellus. Suspendisse potenti.</p>
-            <button class="reg-btn" type="submit" value="Send" form="reg-form">Rezervēt!</button>
-        </div>
-    </div>
+		<div class="reg_wrap">
+			<div class="reg_nosauk">
+				<h2 class="third-h2">Brauc atpūsties</h2>
+			</div>
+			<div class="reg_saturs reg_saturs_bottom">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac leo quis lorem mollis consequat ac suscipit mauris. Nulla consequat ipsum semper ex condimentum, sed blandit ligula tempor. In vehicula nisl vehicula est rutrum tincidunt. Aenean in gravida tellus. Suspendisse potenti.</p>
+				<button class="reg-btn" type="submit" value="Send" form="reg-form">Rezervēt!</button>
+			</div>
+		</div>
 
-
-    <footer>
-        <div id="left-text">&copy;2016 Developed by: <a href="#">Andis</a> </div>
-        <div id="right-nav">
-            <a href="#">Noteikumi</a>
-            <a href="#">BUJ</a>
-            <a href="#">Facebook</a>
-            <a href="#">draugiem.lv</a>
-        </div>
-    </footer>
+	</div>
+	<footer>
+		<div id="left-text">&copy;2016 Developed by: <a href="#">Andis</a> </div>
+		<div id="right-nav">
+			<a href="#">Noteikumi</a>
+			<a href="#">BUJ</a>
+			<a href="#">Facebook</a>
+			<a href="#">draugiem.lv</a>
+		</div>
+	</footer>
 
 </body>
 
