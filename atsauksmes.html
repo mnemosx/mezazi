@@ -11,73 +11,9 @@
 	<link href="//fonts.googleapis.com/css?family=Raleway:300,500" rel="stylesheet">
 	<link href="//fonts.googleapis.com/css?family=Roboto:300" rel='stylesheet' type="text/css">
 	<link rel="canonical" href="https://mnemosx.github.io/mezazi/atsauksmes" />
-	<title>Mežāži</title>
-
-	<style>
-		html {
-			overflow: auto;
-			height: 100%;
-		}
-		
-		body {
-			background-color: #efefef;
-			height: 100%;
-		}
-		
-		#atsauksmju_uzruna {
-			margin: 0 auto;
-			padding-top: 100px;
-			width: 60%;
-			font-family: Raleway, "sans-serif";
-			text-align: center;
-			line-height: 1.6;
-		}
-		
-		#disqus_thread {
-			width: 60%;
-			margin: 0 auto;
-			padding: 60px 0;
-			/*height: calc(100vh - 60%);*/
-		}
-		
-		#disqus_thread:after {
-			position: relative;
-			content: "";
-			display: block;
-			height: 75px;
-			width: 100%;
-			margin-top: -60px;
-			background: #efefef;
-			z-index: 2;
-		}
-		
- .page-wrap { min-height: 100%; margin-bottom: -25px; } .page-wrap:after { content: ""; display: block; } footer { position: relative; } footer, .page-wrap:after { height: 25px; }
-		
-		footer a,
-		#left-text {
-			color: #31314b;
-		}
-		
-		@media (max-width: 780px) {
-			#atsauksmju_uzruna {
-				padding-top: 175px;
-			}
-			#atsauksmju_uzruna,
-			#disqus_thread {
-				width: 85%;
-			}
-		}
-		
-		@media (max-width: 520px) {
-			#atsauksmju_uzruna {
-				padding-top: 220px;
-			}
-		}
-
-	</style>
 </head>
 
-<body>
+<body class="atsauksmes-body">
 	<div class="page-wrap">
 		<header>
 			<a href="https://mnemosx.github.io/mezazi"><img src="img/drawing.svg" alt="Mežāži"></a>
@@ -92,16 +28,16 @@
 			</nav>
 		</header>
 
-		<div id="atsauksmju_uzruna">
+		<div class="atsauksmju_uzruna">
 			<h1>Padalies ar savu viedokli!</h1>
 			<p>Mums rūp tas, ko domā mūsu apmeklētāji. Atstāj šeit savu komentāru, ierosinājumu vai kritiku. Padalies savā pieredzē ar citiem!</p>
 		</div>
 
 		<div id="disqus_thread"></div>
 	</div>
-	<footer>
-		<div id="left-text">&copy;2016 Developed by: <a href="#">Andis</a> </div>
-		<div id="right-nav">
+	<footer class="pushed-footer dark-footer">
+		<div class="left-text left-text-dark">&copy;2016 Developed by: <a href="#">Andis</a> </div>
+		<div class="right-nav">
 			<a href="#">Noteikumi</a>
 			<a href="#">BUJ</a>
 			<a href="#">Facebook</a>
@@ -128,7 +64,7 @@
 		})();
 
 	</script>
-	<noscript>Lūdzu, iespējo pārlūkā Javascript, lai aplūkotu <a href="https://disqus.com/?ref_noscript">komentārus.</a></noscript>
+	<noscript>Lai aplūkotu <a href="https://disqus.com/?ref_noscript">komentārus, lūdzu, iespējo pārlūkā Javascript.</a></noscript>
 
 
 </body>
