@@ -115,6 +115,7 @@
 					}]
 				}]
 			});
+      
 
 			marker = new google.maps.Marker({
 				position: {
@@ -136,14 +137,6 @@
 			var infowindow = new google.maps.InfoWindow({
 				content: contentString
 			});
-      
-      var isDraggable = $(document).width() > 540 ? true : false; 
-
-      var mapOptions = {
-        draggable: isDraggable,
-
-        scrollwheel: false, 
-      };
 
 			google.maps.event.addListener(marker, 'mouseover', function() {
 				infowindow.open(map, marker);
@@ -153,6 +146,13 @@
         google.maps.event.trigger(map, "resize");
         map.setCenter(center); 
       });
+      var isDraggable = $(document).width() > 540 ? true : false; 
+
+      var mapOptions = {
+        draggable: isDraggable,
+
+        scrollwheel: false, 
+      };
 		}
 
 
