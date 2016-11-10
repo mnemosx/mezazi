@@ -123,6 +123,10 @@ nav a:hover {
 .hide-cross {
   opacity: 0;
 }
+.noscroll {
+  overflow: hidden;
+}
+
 
 /* ------------------------- FOOTER -------------------------  */
 
@@ -1037,24 +1041,15 @@ input[type="checkbox"] {
     left: 25%;
   }
   
-  .burger {
+  .burger, .cross {
     display: block;
     position: absolute;
-    font-size: 4em;
-    color: #ffd2cf;
-    top: -7px;
-    right: 10px;
     cursor: pointer;
-    padding: 0 15px 5px 15px;
-  }
-  .cross {
-    display: block;
-    font-size: 3em;
-    position: absolute;
-    color: #ffd2cf;
-    top: -6px;;
-    right: 23px;
-    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    top: 0;
+    left:  80%;
   }
   nav {
     display: none;

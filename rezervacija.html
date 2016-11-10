@@ -13,7 +13,7 @@
   <script src="mobile-menu.js"></script>
 </head>
 
-<body>
+<body id="body">
 	<div class="page-wrap">
 		<header>
 			<a href="https://mnemosx.github.io/mezazi"><img class="logo" src="img/drawing.svg" alt="Mežāži"></a>
@@ -27,10 +27,10 @@
 				</ul>
 			</nav>
       
-      <span id="burger" class="burger" onclick="openNav();hideBurger()">&#x2261;</span>
+      <img id="burger" class="burger" onclick="openNav();hideBurger()" src="img/icons/burger.svg">
     
     <div id="myNav" class="overlay overlay-hide">
-      <span id="cross" class="cross hide-cross" onclick="closeNav();showBurger()">&#x2716;</span>
+      <img id="cross" class="cross hide-cross" onclick="closeNav();showBurger()" src="img/icons/close.svg">
       <div class="overlay-content">
         <a href="https://mnemosx.github.io/mezazi/index.html">Sākums</a>
         <a href="https://mnemosx.github.io/mezazi/par-mums.html">Par mums</a>
@@ -39,6 +39,7 @@
         <a href="https://mnemosx.github.io/mezazi/kontakti.html">Kontakti</a>
       </div>
     </div>
+
 		</header>
 
 		<div class="reg_wrap">
