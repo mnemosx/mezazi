@@ -10,13 +10,14 @@
 	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
 	<link href="//fonts.googleapis.com/css?family=Raleway:300,500" rel="stylesheet">
 	<link href="//fonts.googleapis.com/css?family=Roboto:300" rel='stylesheet' type="text/css">
-	<link rel="canonical" href="https://mnemosx.github.io/mezazi/atsauksmes" />
+	<link rel="canonical" href="https://mnemosx.github.io/mezazi/atsauksmes">
+  <script src="mobile-menu.js"></script>
 </head>
 
 <body class="atsauksmes-body">
 	<div class="page-wrap">
 		<header>
-			<a href="https://mnemosx.github.io/mezazi"><img src="img/drawing.svg" alt="Mežāži"></a>
+			<a href="https://mnemosx.github.io/mezazi"><img class="logo" src="img/drawing.svg" alt="Mežāži"></a>
 			<nav>
 				<ul>
 					<li><a href="https://mnemosx.github.io/mezazi/index.html"><i class="fa fa-home"></i>Sākums</a></li>
@@ -26,6 +27,19 @@
 					<li><a href="https://mnemosx.github.io/mezazi/kontakti.html"><i class="fa fa-map-marker"></i>Kontakti</a></li>
 				</ul>
 			</nav>
+      
+      <span id="burger" class="burger" onclick="openNav();hideBurger()">☰</span>
+    
+    <div id="myNav" class="overlay overlay-hide">
+      <span id="cross" class="cross hide-cross" onclick="closeNav();showBurger()">×</span>
+      <div class="overlay-content">
+        <a href="https://mnemosx.github.io/mezazi/index.html">Sākums</a>
+        <a href="https://mnemosx.github.io/mezazi/par-mums.html">Par mums</a>
+        <a href="https://mnemosx.github.io/mezazi/rezervacija.html">Rezervācija</a>
+        <a href="https://mnemosx.github.io/mezazi/atsauksmes.html">Atsauksmes</a>
+        <a href="https://mnemosx.github.io/mezazi/kontakti.html">Kontakti</a>
+      </div>
+    </div>
 		</header>
 
 		<div class="atsauksmju_uzruna">

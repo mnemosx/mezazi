@@ -2,53 +2,70 @@
 <html>
 
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="stylesheet.css">
-	<link rel="icon" href="favicon.ico" type="image/x-icon">
-	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
-	<link href="//fonts.googleapis.com/css?family=Raleway:300,500" rel="stylesheet">
-	<link href="//fonts.googleapis.com/css?family=Roboto:300" rel='stylesheet' type="text/css">
-	<title>Mežāži</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="stylesheet.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="//fonts.googleapis.com/css?family=Raleway:300,500" rel="stylesheet">
+  <link href="//fonts.googleapis.com/css?family=Roboto:300" rel='stylesheet' type="text/css">
+  <title>Mežāži</title>
+  <script src="mobile-menu.js"></script>
 </head>
 
 <body class="sakums">
-	<div class="video-overlay"></div>
-	<video autoplay loop poster="beach.jpg" class="bgvid">
+  <div class="video-overlay"></div>
+  <video autoplay loop poster="beach.jpg" class="bgvid">
         <source src="beach.mp4" type="video/mp4">
   </video>
 
-	<header>
-		<a href="https://mnemosx.github.io/mezazi"><img src="img/drawing.svg" alt="Mežāži"></a>
-		<nav>
-			<ul>
-				<li><a href="https://mnemosx.github.io/mezazi/index.html"><i class="fa fa-home"></i>Sākums</a></li>
-				<li><a href="https://mnemosx.github.io/mezazi/par-mums.html"><i class="fa fa-users"></i>Par mums</a></li>
-				<li><a href="https://mnemosx.github.io/mezazi/rezervacija.html"><i class="fa fa-pencil-square-o"></i>Rezervācija</a></li>
-				<li><a href="https://mnemosx.github.io/mezazi/atsauksmes.html"><i class="fa fa-comments"></i>Atsauksmes</a></li>
-				<li><a href="https://mnemosx.github.io/mezazi/kontakti.html"><i class="fa fa-map-marker"></i>Kontakti</a></li>
-			</ul>
-		</nav>
-	</header>
-	<div class="uzruna-wrap">
-		<div class="uzruna">
-			<h1>Izbaudi&nbsp;uguns&nbsp;un&nbsp;ūdens&nbsp;attīrošo&nbsp;spēku</h1>
-			<h3>Izbaudi&nbsp;atpūtu&nbsp;Mežāžos</h3>
-		</div>
-	</div>
-
-	<div class="btn-wrapper"><button type="button" onclick="location.href='rezervacija.html'">Vēlos atpūsties!</button></div>
+  <header>
+    <a href="https://mnemosx.github.io/mezazi"><img class="logo" src="img/drawing.svg" alt="Mežāži"></a>
+    <nav>
+      <ul>
+        <li><a href="https://mnemosx.github.io/mezazi/index.html">Sākums</a></li>
+        <li><a href="https://mnemosx.github.io/mezazi/par-mums.html">Par mums</a></li>
+        <li><a href="https://mnemosx.github.io/mezazi/rezervacija.html">Rezervācija</a></li>
+        <li><a href="https://mnemosx.github.io/mezazi/atsauksmes.html">Atsauksmes</a></li>
+        <li><a href="https://mnemosx.github.io/mezazi/kontakti.html">Kontakti</a></li>
+      </ul>
+    </nav>
 
 
-	<footer>
-		<div class="left-text">&copy;2016 Developed by: <a href="#" title="Andis">Andis</a> </div>
-		<div class="right-nav">
-			<a href="#" title="Noteikumi">Noteikumi</a>
-			<a href="#" title="BUJ">BUJ</a>
-			<a href="#" title="Facebook">Facebook</a>
-			<a href="#" title="draugiem">draugiem.lv</a>
-		</div>
-	</footer>
+    <span id="burger" class="burger" onclick="openNav();hideBurger()">☰</span>
+    
+    <div id="myNav" class="overlay overlay-hide">
+      <span id="cross" class="cross hide-cross" onclick="closeNav();showBurger()">×</span>
+      <div class="overlay-content">
+        <a href="https://mnemosx.github.io/mezazi/index.html">Sākums</a>
+        <a href="https://mnemosx.github.io/mezazi/par-mums.html">Par mums</a>
+        <a href="https://mnemosx.github.io/mezazi/rezervacija.html">Rezervācija</a>
+        <a href="https://mnemosx.github.io/mezazi/atsauksmes.html">Atsauksmes</a>
+        <a href="https://mnemosx.github.io/mezazi/kontakti.html">Kontakti</a>
+      </div>
+    </div>
+
+
+  </header>
+  <div class="uzruna-wrap">
+    <div class="uzruna">
+      <h1>Izbaudi&nbsp;uguns&nbsp;un&nbsp;ūdens&nbsp;attīrošo&nbsp;spēku</h1>
+      <h3>Izbaudi&nbsp;atpūtu&nbsp;Mežāžos</h3>
+    </div>
+  </div>
+
+  <div class="btn-wrapper"><button class="button" type="button" onclick="location.href='rezervacija.html'">Vēlos atpūsties!</button></div>
+
+
+  <footer>
+    <div class="left-text">&copy;2016 Developed by: <a href="#" title="Andis">Andis</a> </div>
+    <div class="right-nav">
+      <a href="#" title="Noteikumi">Noteikumi</a>
+      <a href="#" title="BUJ">BUJ</a>
+      <a href="#" title="Facebook">Facebook</a>
+      <a href="#" title="draugiem">draugiem.lv</a>
+    </div>
+  </footer>
 
 </body>
 

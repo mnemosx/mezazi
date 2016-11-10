@@ -9,12 +9,13 @@
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
 	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
 	<link href="//fonts.googleapis.com/css?family=Raleway:300,500" rel="stylesheet">
-	<link href="//fonts.googleapis.com/css?family=Roboto:300" rel='stylesheet' type="text/css">
+	<link href="//fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet" type="text/css">
+  <script src="mobile-menu.js"></script>
 </head>
 
 <body>
 	<header>
-		<a href="https://mnemosx.github.io/mezazi"><img src="img/drawing.svg" alt="Mežāži"></a>
+		<a href="https://mnemosx.github.io/mezazi"><img class="logo" src="img/drawing.svg" alt="Mežāži"></a>
 		<nav>
 			<ul>
 				<li><a href="https://mnemosx.github.io/mezazi/index.html"><i class="fa fa-home"></i>Sākums</a></li>
@@ -24,13 +25,25 @@
 				<li><a href="https://mnemosx.github.io/mezazi/kontakti.html"><i class="fa fa-map-marker"></i>Kontakti</a></li>
 			</ul>
 		</nav>
+    <span id="burger" class="burger" onclick="openNav();hideBurger()">☰</span>
+    
+    <div id="myNav" class="overlay overlay-hide">
+      <span id="cross" class="cross hide-cross" onclick="closeNav();showBurger()">×</span>
+      <div class="overlay-content">
+        <a href="https://mnemosx.github.io/mezazi/index.html">Sākums</a>
+        <a href="https://mnemosx.github.io/mezazi/par-mums.html">Par mums</a>
+        <a href="https://mnemosx.github.io/mezazi/rezervacija.html">Rezervācija</a>
+        <a href="https://mnemosx.github.io/mezazi/atsauksmes.html">Atsauksmes</a>
+        <a href="https://mnemosx.github.io/mezazi/kontakti.html">Kontakti</a>
+      </div>
+    </div>
 	</header>
 
 	<div class="kontaktu-info">
 		<div class="social">
 			<a href="//facebook.com"><img src="img/icons/facebook.svg" alt="Seko mums Facebook!"></a>
 			<a href="//draugiem.lv"><img src="img/icons/draugiem.svg" alt="Seko mums draugiem.lv!"></a>
-			<a href="//instagram.com"><img src="img/icons/instagram.svg" alt="seko mums Instagram!"></a>
+			<a href="//instagram.com"><img src="img/icons/instagram.svg" alt="Seko mums Instagram!"></a>
 		</div>
 
 		<div class="kont-info-wrap">
@@ -45,14 +58,11 @@
 			<p>Reģ. Nr.: 80016545464</p>
 		</div>
 
-		<div class="btn-wrapper-kontakti"><button type="button" onclick="location.href='rezervacija.html'">Rezervēt!</button></div>
+		<div class="btn-wrapper-kontakti"><button class="button" type="button" onclick="location.href='rezervacija.html'">Rezervēt!</button></div>
 	</div>
 
 	<div id="map"></div>
-<!--  <div class="map-image"><a href="https://www.google.lv/maps/place/57%C2%B007'23.2%22N+24%C2%B019'08.3%22E/@57.0752545,24.1808858,11.5z/data=!4m5!3m4!1s0x0:0x0!8m2!3d57.1231111!4d24.3189722"><img src="img/map-image.jpg"</a></div>
--->
 	<div class="footer-gradient"></div>
-
 	<footer class="dark-footer kontakti-footer">
 		<div class="left-text left-text-dark">&copy;2016 Developed by: <a href="#">Andis</a> </div>
 		<div class="right-nav">
