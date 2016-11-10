@@ -115,17 +115,17 @@ footer a {
 
 .right-nav a:nth-child(2):hover {
 	font-size: 15px;
-	margin-left: 56.4px;
+	margin-left: 56px;
 }
 
 .right-nav a:nth-child(3):hover {
 	font-size: 15px;
-	margin-left: 50px;
+	margin-left: 48.95px;
 }
 
 .right-nav a:nth-child(4):hover {
 	font-size: 15px;
-	margin-left: 47.5px;
+	margin-left: 46.5px;
 }
 
 .right-nav a {
@@ -274,7 +274,7 @@ button:after {
 	height: auto;
 	z-index: -100;
 	transform: translateX(-50%) translateY(-50%);
-	background: url(beach.jpg) no-repeat;
+	background: url(img/beach.jpg) no-repeat;
 	background-size: cover;
 }
 
@@ -328,6 +328,37 @@ button:after {
 	height: 100%;
 	object-fit: cover;
 }
+
+[class^="about-"] {
+  position: absolute;
+  width: 40%;
+  top: 20%;
+  left: 15%;
+  line-height: 1.5;
+}
+.about-2 {
+  top: 30%;
+  left: 55%;
+}
+.about-3 {
+  top: 40%;
+  left: 15%;
+}
+.about-4 {
+  top: 60%;
+  left: 35%;
+}
+.text-about {
+  display: inline;
+  font-size: 2.7vmin;
+  color: #00052e;
+  font-family: Raleway, sans-serif;
+  background: rgba(181, 161, 161, 0.88);
+  padding: 2px 15px;
+  box-decoration-break: clone; 
+  -webkit-box-decoration-break: clone;
+}
+
 
 .galer-poga {
 	position: absolute;
@@ -721,7 +752,7 @@ input[type="checkbox"] {
 @media (max-device-width: 540px) {
 	/* This disables background video on small screens */
 	.sakums {
-		background: url(beach.jpg) #000 no-repeat center center fixed;
+		background: url(img/beach.jpg) #000 no-repeat center center fixed;
 		background-size: cover;
 	}
 	.bgvid {

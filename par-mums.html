@@ -8,6 +8,7 @@
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
 	<link href="//fonts.googleapis.com/css?family=Roboto:300" rel='stylesheet' type="text/css">
+  <link href="//fonts.googleapis.com/css?family=Raleway:300,500" rel="stylesheet">
 	<script src="//code.jquery.com/jquery-3.1.0.min.js"></script>
 </head>
 
@@ -31,10 +32,10 @@
 		<i class="fa fa-chevron-right galer-poga next"></i>
 		<i class="fa fa-chevron-left galer-poga prev"></i>
 		<div class="gallery-container">
-			<div style="display: inline-block;"><img src="img/pic3.jpg" /></div>
-			<div><img src="img/pic1.jpg" /></div>
-			<div><img src="img/pic2.jpg" /></div>
-			<div><img src="img/pic4.jpg" /></div>
+			<div style="display: inline-block;"><img src="img/pic3.jpg"><p class="about-1"><span class="text-about">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eum qui audiebant, quoad poterant, defendebant sententiam suam. Hoc enim constituto in philosophia constituta sunt omnia. Ait enim se, si uratur, Quam hoc suave! dicturum.</span></p></div>
+			<div><img src="img/pic1.jpg"><p class="about-2"><span class="text-about">Et sea summo interesset, duo ullum etiam vituperatoribus et. At doming assentior temporibus sit, justo debitis ei sea, duo ignota deserunt et.</span></p></div>
+			<div><img src="img/pic2.jpg"><p class="about-3"><span class="text-about">Multa sunt dicta ab antiquis de contemnendis ac despiciendis rebus humanis; Non dolere, inquam, istud quam vim habeat postea videro; Habent enim et bene longam et satis litigiosam disputationem. Certe nihil nisi quod possit ipsum propter se iure laudari.</span></p></div>
+			<div><img src="img/pic4.jpg"><p class="about-4"><span class="text-about">Duo Reges: constructio interrete. Re mihi non aeque satisfacit, et quidem locis pluribus. Quamquam tu hanc copiosiorem etiam soles dicere.</span></p></div>
 		</div>
 	</section>
 
@@ -65,7 +66,7 @@
 			if (currentIndex > itemAmt - 1) {
 				currentIndex = 0;
 			}
-			cycleItems();
+      cycleItems()
 		});
 
 		$('.prev').click(function() {
