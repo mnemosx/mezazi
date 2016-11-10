@@ -723,6 +723,8 @@ input[type="checkbox"] {
 	vertical-align: middle;
 }
 
+
+
 /* ------------- FOR RESPONSIVE UZRUNA ------------ */
 @media (min-width: 1000px) and (max-height: 700px) {
 	.uzruna-wrap {
@@ -956,10 +958,6 @@ input[type="checkbox"] {
 		padding: 0;
 		margin: 0;
 	}
-	#map {
-		height: 520px;
-		top: 606px;
-	}
 	.social img {
 		height: 30px;
 		padding: 20px 11% 5px 11%;
@@ -990,6 +988,12 @@ input[type="checkbox"] {
 	.kontakti-footer {
 		display: none;
 	}
+  #map {
+    position: relative;
+    height: 500px;
+    width: 100%;
+    top: 605px;
+  }
 }
 
 @media (max-width: 460px) {

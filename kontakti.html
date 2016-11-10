@@ -49,7 +49,8 @@
 	</div>
 
 	<div id="map"></div>
-
+<!--  <div class="map-image"><a href="https://www.google.lv/maps/place/57%C2%B007'23.2%22N+24%C2%B019'08.3%22E/@57.0752545,24.1808858,11.5z/data=!4m5!3m4!1s0x0:0x0!8m2!3d57.1231111!4d24.3189722"><img src="img/map-image.jpg"</a></div>
+-->
 	<div class="footer-gradient"></div>
 
 	<footer class="dark-footer kontakti-footer">
@@ -64,15 +65,16 @@
 
 
 	<script>
+
 		var map;
 
 		function initMap() {
 			var map = new google.maps.Map(document.getElementById('map'), {
 				center: {
-					lat: 57.071333,
-					lng: 24.160454
+					lat: 57.052611,
+					lng: 24.117851
 				},
-				zoom: 11,
+				zoom: 10,
 				disableDefaultUI: true,
 				styles: [{
 					featureType: 'all',
@@ -134,11 +136,25 @@
 			var infowindow = new google.maps.InfoWindow({
 				content: contentString
 			});
+      
+      var isDraggable = $(document).width() > 540 ? true : false; 
+
+      var mapOptions = {
+        draggable: isDraggable,
+
+        scrollwheel: false, 
+      };
 
 			google.maps.event.addListener(marker, 'mouseover', function() {
 				infowindow.open(map, marker);
 			});
+      google.maps.event.addDomListener(window, "resize", function() {
+        var center = map.getCenter();
+        google.maps.event.trigger(map, "resize");
+        map.setCenter(center); 
+      });
 		}
+
 
 	</script>
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCOW4408WVR9yCSFuOZuTRucpxK5DsdfGg&callback=initMap" async defer></script>
