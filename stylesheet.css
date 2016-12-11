@@ -650,6 +650,10 @@ input[type="checkbox"] {
 	text-decoration: none
 }
 
+.mobile-kontakti {
+  display: none;
+}
+
 .kontaktu-info {
 	position: absolute;
 	float: left;
@@ -957,10 +961,12 @@ input[type="checkbox"] {
 }
 
 @media (max-width: 540px) {
+  body {
+    background-color: #efefef;
+  }
 	header {
 		height: 60px;
 	}
-
 	.right-nav a {
 		margin-left: 10px;
 		transition: all .1s ease-in-out;
@@ -992,40 +998,25 @@ input[type="checkbox"] {
 		margin-bottom: 20px;
 	}
 	.kontaktu-info {
-		min-width: 100%;
-    position: relative;
-    transform: none;
-    top: 60px;
-		text-align: center;
-		padding: 0;
-		margin: 0;
+		display: none;
 	}
-	.social img {
-		height: 30px;
-		padding: 20px 11% 5px 11%;
-	}
-	.kontaktu-info>.social {
-		padding: 5px 0 15px 0;
-	}
-	.kontaktu-telefons:before,
-	.kontaktu-adrese:before,
-	.kontaktu-epasts:before {
-		display: block;
-		margin: 5px auto 15px auto;
-	}
-	.kontaktu-telefons,
-	.kontaktu-adrese,
-	.kontaktu-epasts {
-		display: inline-block;
-		margin: 0;
-	}
-	.kontaktu-info p {
-		font-size: 3vw;
-	}
-	.kont-info-wrap {
-		padding: 15px 0;
-		margin: 0;
-	}
+  .mobile-kontakti {
+    display: block;
+  }
+  .kontaktu-wrap:first-of-type {
+    padding-top: 60px;
+  }
+  .kontaktu-wrap {
+    text-align: center;
+    font-family: Roboto;
+    font-size: 14px;
+    line-height: 1.5;
+    display: block;
+  }
+  .kontaktu-wrap>img {
+    width: 40px;
+    margin-top: 90px;
+  }
 	.footer-gradient,
 	.kontakti-footer {
 		display: none;
@@ -1035,12 +1026,10 @@ input[type="checkbox"] {
     width: 100%;
     top: 60px;
   }
-  
   .logo {
     top: 0;
     left: 25%;
   }
-  
   .burger, .cross {
     display: block;
     position: absolute;
