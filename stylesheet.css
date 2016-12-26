@@ -634,6 +634,15 @@ input[type="checkbox"] {
 
 .disqus-placeholder.is-hidden { display: none; }
 
+.disqus-placeholder {
+  font-size: 16px;
+  font-family: Raleway, "sans-serif";
+  text-align: center;
+  width: 60%;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+
 /* ------------------------- KONTAKTI ------------------------- */
 
 #map {
