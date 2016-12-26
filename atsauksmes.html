@@ -64,7 +64,15 @@
   <script>
     var disqus_config = function() {
       this.page.url = 'https://mnemosx.github.io/mezazi/atsauksmes';
-        this.page.identifier = 'mezazi-atsauksmes';
+      this.page.identifier = 'mezazi-atsauksmes';
+      this.callbacks.onReady = [function() 
+        {
+              var el = document.querySelector('.disqus-placeholder');
+              if (el.classList) 
+                el.classList.add('is-hidden'); 
+              else 
+                el.className += ' ' + 'is-hidden';
+        }]; 
     };
 
     (function() { // DON'T EDIT BELOW THIS LINE
@@ -74,18 +82,7 @@
       s.setAttribute('data-timestamp', +new Date());
       (d.head || d.body).appendChild(s);
     })();
-
-     disqusConfig: function() 
-    {
-        this.callbacks.onReady = [function() 
-        {
-              var el = document.querySelector('.disqus-placeholder');
-              if (el.classList) 
-                el.classList.add('is-hidden'); 
-              else 
-                el.className += ' ' + 'is-hidden';
-        }]; 
-    }
+    
   </script>
   <noscript>Lai aplūkotu <a href="https://disqus.com/?ref_noscript">komentārus, lūdzu, iespējo pārlūkā Javascript.</a></noscript>
 
