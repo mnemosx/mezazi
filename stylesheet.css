@@ -65,7 +65,9 @@ a .fa {
 nav a {
 	display: inline-block;
 	text-decoration: none;
-	font-family: Roboto, sans-serif;
+	font-family: 'Rajdhani', sans-serif;
+  letter-spacing: 1px;
+  font-weight: 400;
 	line-height: 30px;
 	padding: 15px 2px 12px 2px;
 	margin: 0 13px;
@@ -101,8 +103,9 @@ nav a:hover {
   padding: 12px 25px;
   text-decoration: none;
   font-size: 6vh;
-  font-family: Roboto, sans-serif;
+  font-family: Rajdhani, sans-serif;
   font-weight: 300;
+  letter-spacing: 2px;
   color: #f1f1f1;
   display: block;
   transition: 0.2s;
@@ -136,9 +139,10 @@ footer {
 	bottom: 0;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	font-family: roboto, sans-serif;
+  -webkit-backface-visibility: hidden;
+	font-family: Rajdhani, sans-serif;
 	margin-bottom: .6em;
-	font-size: .8em;
+	font-size: 1em;
 }
 
 .right-nav {
@@ -233,7 +237,7 @@ footer a {
 }
 
 .button {
-	font-family: "Roboto", Helvetica, sans-serif;
+	font-family: 'Rajdhani', sans-serif;
 	-webkit-font-smoothing: antialiased;
 	position: relative;
 	padding: .8em 1.4em;
@@ -241,11 +245,11 @@ footer a {
 	font-size: 16px;
 	line-height: 1.6em;
 	letter-spacing: 1px;
-	border-radius: 7px;
-	background: #FE5F55;
-	border: none;
-	color: white;
+	background: transparent;
+	border: 3px solid #fff;
+	color: #fff;
 	transition: .2s;
+  -webkit-backface-visibility:hidden;
 	width: 15em;
 }
 
@@ -263,20 +267,18 @@ footer a {
 	font-size: 1.2em;
 	text-align: center;
 	transition: .2s;
+  -webkit-backface-visibility:hidden;
 }
 
-.button:before {
-	background: rgba(0, 0, 0, 0.1);
-}
+
 
 .button:hover {
-	background: #fe2f22;
 	cursor: pointer;
+  
 }
 
 .button:active,
 .button:focus {
-	background: #b90c01;
 	outline: none;
 }
 
@@ -300,7 +302,8 @@ footer a {
 	margin: 40px 0 190px 0;
 	font-size: 1.1em;
 	letter-spacing: 4px;
-	border-radius: 7px;
+	color: #000;
+  border-color: #000;
 	font-weight: 700;
 }
 
@@ -332,7 +335,6 @@ footer a {
 
 .uzruna {
 	width: 70%;
-	font-family: "Raleway", Helvetica, sans-serif;
 	color: #ffd2cf;
 	line-height: 1.6;
 	text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
@@ -350,15 +352,17 @@ footer a {
 }
 
 .uzruna h1 {
-	font-size: 2.3vw;
+  font-family: Merriweather, serif;
+	font-size: 2.09vw;
 	font-weight: 300;
 	border-bottom: 1px solid white;
 	letter-spacing: 0.82vw;
 }
 
 .uzruna h3 {
-	font-size: 3.5vw;
-	font-weight: 500;
+  font-family: Rajdhani, sans-serif;
+  font-weight: 700;
+	font-size: 4.3vw;
 	text-transform: uppercase;
 	letter-spacing: 1.14vw;
 }
@@ -1055,3 +1059,5 @@ input[type="checkbox"] {
     display: none;
   }
 }
+
+
