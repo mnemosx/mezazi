@@ -336,11 +336,11 @@
       justify-content: center;
       align-items: center;
       text-align: center;
-      z-index: 1002;
     }
     
     .front.par-mums {
-      
+      position: relative;
+      z-index: 1004;
       height: 650px;
       background-color: #fff;
     }
@@ -349,7 +349,7 @@
       position: relative;
       overflow: hidden;
       background: #000;
-      z-index: 1001;
+      z-index: 1002;
       height: 950px;
       color: #eeece3;
     }
@@ -379,7 +379,7 @@
       position: relative;
       overflow: hidden;
       background: #ffffff;
-      z-index: 1001;
+      z-index: 1004;
       height: 800px;
     }
     
@@ -409,7 +409,7 @@
       overflow: hidden;
       margin-bottom: 550px;
       background: #000;
-      z-index: 1001;
+      z-index: 1004;
       color: #eeece3;
     }
     
@@ -537,7 +537,7 @@
       width: 100%;
       position: fixed;
       bottom: 0;
-      z-index: 1000;
+      z-index: 1001;
     }
     
     .footer-nav>ul {
@@ -694,6 +694,21 @@
       $('#overlay').toggleClass('open');
       $('.logo-text').toggleClass('active');
       $('body').toggleClass('active');
+    });
+    
+    $(document).ready(function() {
+      $(window).scroll(function () {
+
+        var scrollY = $(window).scrollTop();
+        var scrollBottom = $(document).height() - $(window).height() - $(window).scrollTop();
+
+        if(scrollY>=3000){
+          $('footer').css({'z-index': '1003'});
+        }
+        if(scrollBottom>=600){
+          $('footer').css({'z-index': '1000'});
+        }
+      });
     });
   </script>
 </body>
