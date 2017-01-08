@@ -585,6 +585,41 @@
       margin: 30px 10px;
     }
   
+    
+    @media (max-width: 480px) {
+      .overlay-logo {
+       display: none;
+      }
+      .front > h1 {
+        width: 90%;
+        font-size: calc(26pt + 1vw);
+      }
+      .front > p {
+        width: 90%;
+        font-size: 18pt;
+      }
+      .btn {
+        max-width: 300px;
+      }
+      .btn-1 rect {
+        stroke-width: 6;
+        stroke-dasharray: 422, 0;
+        opacity: 1;
+        transition: all 2.5s cubic-bezier(0.19, 1, 0.22, 1);
+      }
+
+      .btn-1:focus, btn-1:hover {
+        transform: scale(1.5, 1.5);
+      }
+
+      .btn-1:focus rect, .btn-1:hover rect {
+        stroke-width: 6;
+        stroke-dasharray: 45, 485;
+        stroke-dashoffset: 48;
+        transition: all 1.5s cubic-bezier(0.19, 1, 0.22, 1);
+      }
+    }
+    
   </style>
 
 
