@@ -400,7 +400,7 @@ body.active {
   background-size: cover;
 }
 
-.front.kontakti {
+.front.kontakti-f {
   height: 650px;
   position: relative;
   overflow: hidden;
@@ -410,7 +410,7 @@ body.active {
   color: #eeece3;
 }
 
-.front.kontakti:before {
+.front.kontakti-f:before {
   content: ' ';
   display: block;
   position: absolute;
