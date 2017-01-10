@@ -938,7 +938,7 @@ input[type="checkbox"] {
 .map-over {
   height: 70%;
   width: 100%;
-  background-color: rgba(255, 0, 0, 0.42);
+  background-color: transparent;
   position: absolute;
   margin-bottom: 550px;
   top: 572px;
