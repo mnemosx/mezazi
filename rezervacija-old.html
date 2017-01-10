@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="stylesheet.css">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	<title>Mežāži | Rezervācija</title>
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:300,500" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+  <script src="mobile-menu.js"></script>
+</head>
+
+<body id="body">
+	<div class="page-wrap">
+		<header>
+			<a href="https://mnemosx.github.io/mezazi"><img class="logo" src="img/drawing.svg" alt="Mežāži"></a>
+			<nav>
+				<ul>
+					<li><a href="https://mnemosx.github.io/mezazi/index.html"><i class="fa fa-home"></i>Sākums</a></li>
+					<li><a href="https://mnemosx.github.io/mezazi/par-mums.html"><i class="fa fa-users"></i>Par mums</a></li>
+					<li><a href="https://mnemosx.github.io/mezazi/rezervacija.html"><i class="fa fa-pencil-square-o"></i>Rezervācija</a></li>
+					<li><a href="https://mnemosx.github.io/mezazi/atsauksmes.html"><i class="fa fa-comments"></i>Atsauksmes</a></li>
+					<li><a href="https://mnemosx.github.io/mezazi/kontakti.html"><i class="fa fa-map-marker"></i>Kontakti</a></li>
+				</ul>
+			</nav>
+      
+      <img id="burger" class="burger" onclick="openNav();hideBurger()" src="img/icons/burger.svg">
+    
+    <div id="myNav" class="overlay overlay-hide">
+      <img id="cross" class="cross hide-cross" onclick="closeNav();showBurger()" src="img/icons/close.svg">
+      <div class="overlay-content">
+        <a href="https://mnemosx.github.io/mezazi/index.html">Sākums</a>
+        <a href="https://mnemosx.github.io/mezazi/par-mums.html">Par mums</a>
+        <a href="https://mnemosx.github.io/mezazi/rezervacija.html">Rezervācija</a>
+        <a href="https://mnemosx.github.io/mezazi/atsauksmes.html">Atsauksmes</a>
+        <a href="https://mnemosx.github.io/mezazi/kontakti.html">Kontakti</a>
+      </div>
+    </div>
+
+		</header>
+
+		<div class="reg_wrap">
+			<div class="reg_nosauk">
+				<h2 class="first-h2">Izvēlies datumu</h2>
+			</div>
+			<div class="reg_saturs">
+				<img class="kalendars" src="img/calendar.jpg">
+				<img class="kalendars" src="img/calendar.jpg">
+				<img class="kalendars" src="img/calendar.jpg">
+			</div>
+		</div>
+
+		<div class="reg_wrap reg_wrap_mid">
+			<div class="reg_nosauk">
+				<h2 class="second-h2">Ievadi informāciju</h2>
+			</div>
+			<div class="reg_saturs reg_saturs_mid">
+
+				<form class="clearfix" action="https://formspree.io/mnemosx@gmail.com" method="POST" id="reg-form">
+					<div class="required">
+						<label for="vards">Vārds, Uzvārds:</label>
+						<input id="vards" type="text" name="Vārds" required>
+					</div>
+
+					<div class="required">
+						<label for="tel">Tālrunis:</label>
+						<input id="tel" type="tel" name="Tālrunis" required>
+					</div>
+
+					<div class="required">
+						<label for="epasts">E-pasts:</label>
+						<input id="epasts" type="email" name="_replyto" required>
+					</div>
+
+					<label for="skaits">Viesu skaits:</label>
+					<input id="skaits" type="number" min="1" max="20" name="Viesu skaits">
+
+					<label for="datums">Datums:</label>
+					<input id="datums" type="date" min="2016-11-01" max="2018-11-01" name="Datums">
+
+					<label for="papildu-info"> Vēlies ko piebilst?</label>
+					<textarea id="papildu-info" name="Papildu info" placeholder="Norādi papildu informāciju"></textarea>
+
+					<label for="just-checking">
+                		<input id="just-checking" type="checkbox" value="" required> Ar rezervācijas <a href="noteikumi.html">noteikumiem</a> esmu iepazinies.
+                	</label>
+
+					<input type="text" name="_gotcha" style="display:none">
+					<input type="hidden" name="_next" value="//mnemosx.github.io/mezazi/thanks.html">
+				</form>
+			</div>
+		</div>
+
+		<div class="reg_wrap">
+			<div class="reg_nosauk">
+				<h2 class="third-h2">Brauc atpūsties</h2>
+			</div>
+			<div class="reg_saturs reg_saturs_bottom">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac leo quis lorem mollis consequat ac suscipit mauris. Nulla consequat ipsum semper ex condimentum, sed blandit ligula tempor. In vehicula nisl vehicula est rutrum tincidunt. Aenean in gravida tellus. Suspendisse potenti.</p>
+				<button class="button reg-btn" type="submit" value="Send" form="reg-form">Rezervēt!</button>
+			</div>
+		</div>
+
+	</div>
+	<footer class="pushed-footer dark-footer">
+		<div class="left-text left-text-dark">&copy;2016 Developed by: <a href="#">Andis</a> </div>
+		<div class="right-nav">
+			<a href="#">Noteikumi</a>
+			<a href="#">BUJ</a>
+			<a href="#">Facebook</a>
+			<a href="#">draugiem.lv</a>
+		</div>
+	</footer>
+
+</body>
+
+</html>

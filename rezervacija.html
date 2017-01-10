@@ -4,60 +4,57 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="stylesheet.css">
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
 	<title>Mežāži | Rezervācija</title>
+  <link rel="stylesheet" href="stylesheet.css">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400|Rajdhani:400,700&amp;subset=latin-ext" rel="stylesheet">
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Raleway:300,500" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
-  <script src="mobile-menu.js"></script>
 </head>
 
 <body id="body">
-	<div class="page-wrap">
-		<header>
-			<a href="https://mnemosx.github.io/mezazi"><img class="logo" src="img/drawing.svg" alt="Mežāži"></a>
-			<nav>
-				<ul>
-					<li><a href="https://mnemosx.github.io/mezazi/index.html"><i class="fa fa-home"></i>Sākums</a></li>
-					<li><a href="https://mnemosx.github.io/mezazi/par-mums.html"><i class="fa fa-users"></i>Par mums</a></li>
-					<li><a href="https://mnemosx.github.io/mezazi/rezervacija.html"><i class="fa fa-pencil-square-o"></i>Rezervācija</a></li>
-					<li><a href="https://mnemosx.github.io/mezazi/atsauksmes.html"><i class="fa fa-comments"></i>Atsauksmes</a></li>
-					<li><a href="https://mnemosx.github.io/mezazi/kontakti.html"><i class="fa fa-map-marker"></i>Kontakti</a></li>
-				</ul>
-			</nav>
-      
-      <img id="burger" class="burger" onclick="openNav();hideBurger()" src="img/icons/burger.svg">
-    
-    <div id="myNav" class="overlay overlay-hide">
-      <img id="cross" class="cross hide-cross" onclick="closeNav();showBurger()" src="img/icons/close.svg">
-      <div class="overlay-content">
-        <a href="https://mnemosx.github.io/mezazi/index.html">Sākums</a>
-        <a href="https://mnemosx.github.io/mezazi/par-mums.html">Par mums</a>
-        <a href="https://mnemosx.github.io/mezazi/rezervacija.html">Rezervācija</a>
-        <a href="https://mnemosx.github.io/mezazi/atsauksmes.html">Atsauksmes</a>
-        <a href="https://mnemosx.github.io/mezazi/kontakti.html">Kontakti</a>
+	<div class="whole-reg-wrap">
+		
+    <header>
+      <a id="toggle" class="menu-button menu-reverse-color">
+        <span class="open-text">Menu</span>
+        <span class="close-text">Close</span>
+        <div class="menu-icon">
+          <span class="top"></span>
+          <span class="middle"></span>
+          <span class="bottom"></span>
+        </div>
+      </a>
+
+      <div id="overlay" class="overlay">
+        <a href="https://mnemosx.github.io/mezazi"><img class="overlay-logo" src="img/mezazi-logo-H.svg" alt="Mežāži"></a>
+        <nav>
+          <ul>
+            <li><a href="https://mnemosx.github.io/mezazi/index.html">Sākums</a></li>
+            <li><a href="https://mnemosx.github.io/mezazi/par-mums.html">Par mums</a></li>
+            <li><a href="https://mnemosx.github.io/mezazi/rezervacija.html">Rezervācija</a></li>
+            <li><a href="https://mnemosx.github.io/mezazi/atsauksmes.html">Atsauksmes</a></li>
+            <li><a href="https://mnemosx.github.io/mezazi/kontakti.html">Kontakti</a></li>
+          </ul>
+        </nav>
       </div>
-    </div>
+    </header>
 
-		</header>
-
-		<div class="reg_wrap">
-			<div class="reg_nosauk">
+		<div class="reg-wrap">
+			<div class="reg-nosauk">
 				<h2 class="first-h2">Izvēlies datumu</h2>
 			</div>
-			<div class="reg_saturs">
+			<div class="reg-saturs">
 				<img class="kalendars" src="img/calendar.jpg">
 				<img class="kalendars" src="img/calendar.jpg">
 				<img class="kalendars" src="img/calendar.jpg">
 			</div>
 		</div>
 
-		<div class="reg_wrap reg_wrap_mid">
-			<div class="reg_nosauk">
+		<div class="reg-wrap reg-wrap-mid">
+			<div class="reg-nosauk">
 				<h2 class="second-h2">Ievadi informāciju</h2>
 			</div>
-			<div class="reg_saturs reg_saturs_mid">
+			<div class="reg-saturs">
 
 				<form class="clearfix" action="https://formspree.io/mnemosx@gmail.com" method="POST" id="reg-form">
 					<div class="required">
@@ -83,10 +80,13 @@
 
 					<label for="papildu-info"> Vēlies ko piebilst?</label>
 					<textarea id="papildu-info" name="Papildu info" placeholder="Norādi papildu informāciju"></textarea>
-
+          
+          
 					<label for="just-checking">
-                		<input id="just-checking" type="checkbox" value="" required> Ar rezervācijas <a href="noteikumi.html">noteikumiem</a> esmu iepazinies.
-                	</label>
+            <div class="checkbox-wrap">
+            <input id="just-checking" type="checkbox" value="" required> 
+            <span>Ar rezervācijas <a href="noteikumi.html">noteikumiem</a> esmu iepazinies.</span></div>
+          </label>
 
 					<input type="text" name="_gotcha" style="display:none">
 					<input type="hidden" name="_next" value="//mnemosx.github.io/mezazi/thanks.html">
@@ -94,26 +94,57 @@
 			</div>
 		</div>
 
-		<div class="reg_wrap">
-			<div class="reg_nosauk">
+		<div class="reg-wrap reg-wrap-bottom">
+			<div class="reg-nosauk">
 				<h2 class="third-h2">Brauc atpūsties</h2>
+				<hr>
 			</div>
-			<div class="reg_saturs reg_saturs_bottom">
+			<div class="reg-saturs reg-saturs-bottom">
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac leo quis lorem mollis consequat ac suscipit mauris. Nulla consequat ipsum semper ex condimentum, sed blandit ligula tempor. In vehicula nisl vehicula est rutrum tincidunt. Aenean in gravida tellus. Suspendisse potenti.</p>
-				<button class="button reg-btn" type="submit" value="Send" form="reg-form">Rezervēt!</button>
+        <button class="btn btn-1" type="submit" value="Send" form="reg-form">
+          <svg><rect x="0" y="0" fill="none" width="100%" height="100%"/></svg>Rezervēt</button>
+          
 			</div>
 		</div>
 
 	</div>
-	<footer class="pushed-footer dark-footer">
-		<div class="left-text left-text-dark">&copy;2016 Developed by: <a href="#">Andis</a> </div>
-		<div class="right-nav">
-			<a href="#">Noteikumi</a>
-			<a href="#">BUJ</a>
-			<a href="#">Facebook</a>
-			<a href="#">draugiem.lv</a>
-		</div>
-	</footer>
+	
+	
+  <footer>
+    <img class="footer-logo" src="img/mezazi-logo-V.svg">
+    <nav class="footer-one-row footer-nav">
+      <ul>
+        <li><a href="https://mnemosx.github.io/mezazi/index.html">Sākums</a></li>
+        <li><a href="https://mnemosx.github.io/mezazi/par-mums.html">Par mums</a></li>
+        <li><a href="https://mnemosx.github.io/mezazi/rezervacija.html">Rezervācija</a></li>
+        <li><a href="https://mnemosx.github.io/mezazi/atsauksmes.html">Atsauksmes</a></li>
+        <li><a href="https://mnemosx.github.io/mezazi/kontakti.html">Kontakti</a></li>
+        <li><a href="#">Noteikumi</a></li>
+        <li><a href="#">BUJ</a></li>
+      </ul>
+    </nav>
+    <div class="social">
+      <a href="#"><img src="img/icons/facebook.svg"></a>
+      <a href="#"><img src="img/icons/draugiem.svg"></a>
+      <a href="#"><img src="img/icons/instagram.svg"></a>
+    </div>
+  </footer>
+
+
+  <script src="//code.jquery.com/jquery-3.1.0.min.js"></script>
+  <script>
+    $("#toggle").click(function() {
+      $(this).toggleClass("active");
+      $('#overlay').toggleClass('open');
+      $('.logo-text').toggleClass('active');
+      $('body').toggleClass('active');
+      $('.comment-bg').toggleClass('active');
+      $('.reg-wrap').toggleClass('active');
+      $('.gallery').toggleClass('active');
+      $('.menu-reverse-color').toggleClass('reverse');
+    });
+  </script>
+  
 
 </body>
 
