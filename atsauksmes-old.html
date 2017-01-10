@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="stylesheet.css">
+  <title>Mežāži | Atsauksmes</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="//fonts.googleapis.com/css?family=Raleway:300,500" rel="stylesheet">
+  <link href="//fonts.googleapis.com/css?family=Roboto:300" rel='stylesheet' type="text/css">
+  <link rel="canonical" href="https://mnemosx.github.io/mezazi/atsauksmes">
+  <script src="mobile-menu.js"></script>
+</head>
+
+<body id="body" class="atsauksmes-body">
+  <div class="page-wrap">
+    <header>
+      <a href="https://mnemosx.github.io/mezazi"><img class="logo" src="img/drawing.svg" alt="Mežāži"></a>
+      <nav>
+        <ul>
+          <li><a href="https://mnemosx.github.io/mezazi/index.html"><i class="fa fa-home"></i>Sākums</a></li>
+          <li><a href="https://mnemosx.github.io/mezazi/par-mums.html"><i class="fa fa-users"></i>Par mums</a></li>
+          <li><a href="https://mnemosx.github.io/mezazi/rezervacija.html"><i class="fa fa-pencil-square-o"></i>Rezervācija</a></li>
+          <li><a href="https://mnemosx.github.io/mezazi/atsauksmes.html"><i class="fa fa-comments"></i>Atsauksmes</a></li>
+          <li><a href="https://mnemosx.github.io/mezazi/kontakti.html"><i class="fa fa-map-marker"></i>Kontakti</a></li>
+        </ul>
+      </nav>
+
+      <img id="burger" class="burger" onclick="openNav();hideBurger()" src="img/icons/burger.svg">
+
+      <div id="myNav" class="overlay overlay-hide">
+        <img id="cross" class="cross hide-cross" onclick="closeNav();showBurger()" src="img/icons/close.svg">
+        <div class="overlay-content">
+          <a href="https://mnemosx.github.io/mezazi/index.html">Sākums</a>
+          <a href="https://mnemosx.github.io/mezazi/par-mums.html">Par mums</a>
+          <a href="https://mnemosx.github.io/mezazi/rezervacija.html">Rezervācija</a>
+          <a href="https://mnemosx.github.io/mezazi/atsauksmes.html">Atsauksmes</a>
+          <a href="https://mnemosx.github.io/mezazi/kontakti.html">Kontakti</a>
+        </div>
+      </div>
+
+    </header>
+
+    <div class="atsauksmju_uzruna">
+      <h1>Padalies ar savu viedokli!</h1>
+      <p>Mums rūp tas, ko domā mūsu apmeklētāji. Atstāj šeit savu komentāru, ierosinājumu vai kritiku. Padalies savā pieredzē ar citiem!</p>
+    </div>
+
+    <div class="disqus-placeholder">Ielādē komentārus...</div>
+    <div id="disqus_thread"></div>
+  </div>
+  <footer class="pushed-footer dark-footer">
+    <div class="left-text left-text-dark">&copy;2016 Developed by: <a href="#">Andis</a> </div>
+    <div class="right-nav">
+      <a href="#">Noteikumi</a>
+      <a href="#">BUJ</a>
+      <a href="#">Facebook</a>
+      <a href="#">draugiem.lv</a>
+    </div>
+  </footer>
+
+  <script>
+    var disqus_config = function() {
+      this.page.url = 'https://mnemosx.github.io/mezazi/atsauksmes';
+      this.page.identifier = 'mezazi-atsauksmes';
+      this.callbacks.onReady = [function() 
+        {
+              var el = document.querySelector('.disqus-placeholder');
+              if (el.classList) 
+                el.classList.add('is-hidden'); 
+              else 
+                el.className += ' ' + 'is-hidden';
+        }]; 
+    };
+
+    (function() { // DON'T EDIT BELOW THIS LINE
+      var d = document,
+        s = d.createElement('script');
+      s.src = '//mnemosx-github-io-mezazi.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+    
+  </script>
+  <noscript>Lai aplūkotu <a href="https://disqus.com/?ref_noscript">komentārus, lūdzu, iespējo pārlūkā Javascript.</a></noscript>
+
+
+</body>
+
+</html>
