@@ -465,6 +465,7 @@ hr {
   color: #2e3f43;
   background: none;
   border: none;
+  outline: none;
   cursor: pointer;
   display: block;
   font-family: Rajdhani, sans-serif;
@@ -689,7 +690,7 @@ footer {
   margin: 0 auto;
   padding-top: 190px;
   max-width: 900px;
-  width: 60%;
+  width: 90%;
   text-align: center;
   line-height: 1.6;
 }
@@ -931,6 +932,81 @@ input[type="checkbox"] {
   line-height: 1.4;
 }
 
+
+
+/* ---------------------------- KONTAKTI ----------------- */
+.map-over {
+  height: 70%;
+  width: 100%;
+  background-color: rgba(255, 0, 0, 0.42);
+  position: absolute;
+  margin-bottom: 550px;
+  top: 572px;
+  z-index: 1005;
+}
+.map-over.active {
+  z-index: 1006;
+}
+#map {
+  height: 70%;
+  position: relative;
+  margin-bottom: 550px;
+  z-index: 1006;
+  pointer-events: none;
+}
+
+.gm-style-cc {
+  display: none;
+}
+
+.gm-style a[title='Click to see this area on Google Maps'] {
+  display: none;
+}
+
+#map_pointer a {
+  text-decoration: none
+}
+
+.kontakti {
+  position: relative;
+  width: 100%;
+  display: flex;
+  background-color: #fff;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  z-index: 1002;
+}
+
+.kontaktu-wrap {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  max-width: 400px;
+  width: 30%;
+  text-align: center;
+  line-height: 2;
+  margin: 100px 0;
+}
+.kontaktu-wrap img {
+  width: 80px;
+}
+
+.kontaktu-wrap h2 {
+  font-family: Rajdhani, 'sans-serif';
+  font-size: 22pt;
+  letter-spacing: 2px;
+  margin-top: 30px;
+}
+.kontaktu-wrap p {
+  font-family: Merriweather, serif;
+  
+}
+
+
+
+
 @media (max-width: 800px) {
   .kalendars:last-of-type {
     display: none;
@@ -963,6 +1039,16 @@ input[type="checkbox"] {
   }
   #disqus_thread {
     width: 90%;
+  }
+  .kontakti {
+    flex-direction: column;
+    align-items: center;
+  }
+  .kontaktu-wrap {
+    width: 90%;
+  }
+  .kontaktu-wrap:nth-of-type(2), .kontaktu-wrap:nth-of-type(3){
+    margin-top: -20px;
   }
 }
 @media (max-width: 480px) {
