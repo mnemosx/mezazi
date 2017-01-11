@@ -973,6 +973,8 @@ input[type="checkbox"] {
 
 .kontakti {
   position: relative;
+  top: -75px;
+  margin-bottom: -80px;
   width: 100%;
   display: flex;
   background-color: #fff;
@@ -991,7 +993,7 @@ input[type="checkbox"] {
   width: 30%;
   text-align: center;
   line-height: 2;
-  margin: 100px 0;
+  margin: 175px 0 100px 0;
 }
 .kontaktu-wrap img {
   width: 80px;
@@ -1007,7 +1009,9 @@ input[type="checkbox"] {
   font-family: Merriweather, serif;
   font-size: calc(10pt + .3vw);
 }
-
+.kontakti.active, #map.active {
+  filter: blur(4px);
+}
 
 
 
