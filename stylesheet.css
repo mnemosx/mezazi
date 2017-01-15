@@ -638,7 +638,6 @@ footer {
   -webkit-box-decoration-break: clone;
 }
 
-
 .galer-poga {
   position: absolute;
   z-index: 2;
@@ -646,22 +645,28 @@ footer {
   font-size: 4vw !important;
   color: #ffd2cf;
 }
+.galer-poga:hover {
+  cursor: pointer;
+  
+}
 
 .next {
   right: 40px;
   padding: 20% 2% 20% 40%;
   margin: -20% -1%;
 }
+.next:hover {
+  animation: bounceright .3s alternate ease infinite;
+}
+
 
 .prev {
   left: 40px;
   padding: 20% 40% 20% 2%;
   margin: -20% -2%;
 }
-
-.galer-poga:hover {
-  cursor: pointer;
-  animation: bounceright .3s alternate ease infinite;
+.prev:hover {
+  animation: bounceleft .3s alternate ease infinite;
 }
 
 .gallery {
@@ -673,6 +678,34 @@ footer {
   filter: blur(4px);
 }
 
+@keyframes bounceleft {
+  0% {
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -moz-transform: translateX(-15px);
+    -ms-transform: translateX(-15px);
+    -webkit-transform: translateX(-15px);
+    transform: translateX(-15px);
+  }
+}
+@keyframes bounceright {
+  0% {
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -moz-transform: translateX(15px);
+    -ms-transform: translateX(15px);
+    -webkit-transform: translateX(15px);
+    transform: translateX(15px);
+  }
+}
 
 /* ------------------------- ATSAUKSMES ------------------------- */
 
