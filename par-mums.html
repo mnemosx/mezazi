@@ -37,20 +37,18 @@
     </div>
   </header>
 
-
 	<!-- Galerija pēc šī tutorial https://www.sitepoint.com/web-foundations/making-simple-image-slider-html-css-jquery/ -->
-
 	<section class="gallery">
 		<i class="fa fa-chevron-right galer-poga next"></i>
 		<i class="fa fa-chevron-left galer-poga prev"></i>
 		<div class="gallery-container">
-			<div class="swipe" style="display: inline-block;"><img src="img/pic3.jpg"><p class="about-1"><span class="text-about">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eum qui audiebant, quoad poterant, defendebant sententiam suam. Hoc enim constituto in philosophia constituta sunt omnia. Ait enim se, si uratur, Quam hoc suave! dicturum.</span></p></div>
-      <div class="swipe"><img src="img/pic1.jpg"><p class="about-2"><span class="text-about">Et sea summo interesset, duo ullum etiam vituperatoribus et. At doming assentior temporibus sit, justo debitis ei sea, duo ignota deserunt et.</span></p></div>
-      <div class="swipe"><img src="img/pic2.jpg"><p class="about-3"><span class="text-about">Multa sunt dicta ab antiquis de contemnendis ac despiciendis rebus humanis; Non dolere, inquam, istud quam vim habeat postea videro; Habent enim et bene longam et satis litigiosam disputationem. Certe nihil nisi quod possit ipsum propter se iure laudari.</span></p></div>
-      <div class="swipe"><img src="img/pic4.jpg"><p class="about-4"><span class="text-about">Duo Reges: constructio interrete. Re mihi non aeque satisfacit, et quidem locis pluribus. Quamquam tu hanc copiosiorem etiam soles dicere.</span></p></div>
+			<div style="display: inline-block;"><img src="img/pic3.jpg"><p class="about-1"><span class="text-about">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eum qui audiebant, quoad poterant, defendebant sententiam suam. Hoc enim constituto in philosophia constituta sunt omnia. Ait enim se, si uratur, Quam hoc suave! dicturum.</span></p></div>
+      <div><img src="img/pic1.jpg"><p class="about-2"><span class="text-about">Et sea summo interesset, duo ullum etiam vituperatoribus et. At doming assentior temporibus sit, justo debitis ei sea, duo ignota deserunt et.</span></p></div>
+      <div><img src="img/pic2.jpg"><p class="about-3"><span class="text-about">Multa sunt dicta ab antiquis de contemnendis ac despiciendis rebus humanis; Non dolere, inquam, istud quam vim habeat postea videro; Habent enim et bene longam et satis litigiosam disputationem. Certe nihil nisi quod possit ipsum propter se iure laudari.</span></p></div>
+      <div><img src="img/pic4.jpg"><p class="about-4"><span class="text-about">Duo Reges: constructio interrete. Re mihi non aeque satisfacit, et quidem locis pluribus. Quamquam tu hanc copiosiorem etiam soles dicere.</span></p></div>
 		</div>
 	</section>
-
+	
   <footer>
     <img class="footer-logo" src="img/mezazi-logo-V.svg">
     <nav class="footer-one-row footer-nav">
@@ -72,14 +70,7 @@
   </footer>
 
   <script src="//code.jquery.com/jquery-3.1.0.min.js"></script>
-  <script type="text/javascript" src="jquery.touchSwipe.min.js"></script>
-  <script src="modernizr.js" type="text/javascript"></script>
-  <script>
-    Modernizr.load({
-      test: Modernizr.touch,
-      yep : 'touchSwipe.min.js',
-    });
-  </script>
+
 	<script>
 		var currentIndex = 0,
 			items = $('.gallery-container div'),
@@ -108,20 +99,7 @@
 		});
 
 	</script>
-	<script>
-    $(function() {      
-      //Enable swiping...
-      $(".swipe").swipe( {
-        //Generic swipe handler for all directions
-        swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
-          $(this).text("You swiped " + direction );  
-        },
-        //Default is 75px, set to 0 for demo so any distance triggers swipe
-        threshold:25
-      });
-    });
-
-  </script>
+	
   <script>
     $("#toggle").click(function() {
       $(this).toggleClass("active");
