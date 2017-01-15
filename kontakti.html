@@ -79,19 +79,31 @@
   </footer>
 
   <script src="//code.jquery.com/jquery-3.1.0.min.js"></script>
+   <script>
+    $("#toggle").click(function() {
+      $(this).toggleClass("active");
+      $('#overlay').toggleClass('open');
+      $('.logo-text, body, .comment-bg, .reg-wrap, .gallery, .kontakti, #map').toggleClass('active');
+      $('.menu-reverse-color').toggleClass('reverse');
+    });
+  </script>
+  
   <script>
+    var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ? true : false;
     
-  $(document).ready(function() {
-      var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ? true : false;
-      if (!isMobile) {
+    $(document).ready(function() {
+      var $over = $('.map-over');
+      if (isMobile) {
+        $over.hide();
+        $('#map').css("pointer-events", "auto");
+      } else {
         $('.map-over').click(function() {
           $('#map').css("pointer-events", "auto");
+          
         });
         $("#map").mouseleave(function() {
           $('#map').css("pointer-events", "none");
         });
-      } else {
-        $('#map').css("pointer-events", "auto");
       }
     });
 
