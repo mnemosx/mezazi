@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="no-js">
 
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -56,7 +56,10 @@
     </div>
   </div>
 
-  <div class="ugh-another-fuckin-wraper"><div id="map"></div><div class="map-over"></div></div>
+  <div class="ugh-another-fuckin-wraper">
+    <div id="map"></div>
+    <div class="map-over"></div>
+  </div>
 
   <footer>
     <img class="footer-logo" src="img/mezazi-logo-V.svg">
@@ -79,6 +82,7 @@
   </footer>
 
   <script src="//code.jquery.com/jquery-3.1.0.min.js"></script>
+  <script src="modernizr.js" type="text/javascript"></script>
   <script>
     $("#toggle").click(function() {
       $(this).toggleClass("active");
@@ -86,20 +90,22 @@
       $('.logo-text, body, .comment-bg, .reg-wrap, .gallery, .kontakti, #map').toggleClass('active');
       $('.menu-reverse-color').toggleClass('reverse');
     });
-
   </script>
-  
+
   <script>
-    
+    if (Modernizr.touchevents) {
+      $('#map').css("pointer-events", "auto");
+    } else {
       $('.map-over').click(function() {
         $('#map').css("pointer-events", "auto");
-        $('.map-over').toggleClass("active");
-      });
 
+      });
       $("#map").mouseleave(function() {
         $('#map').css("pointer-events", "none");
       });
-
+    }
+        
+  
   </script>
   <script>
     var map;

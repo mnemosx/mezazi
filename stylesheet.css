@@ -890,6 +890,7 @@ textarea {
 
 textarea {
   font-size: 1em;
+  max-height: 170px;
   height: 100px;
   max-width: 300px;
 }
@@ -951,12 +952,17 @@ input[type="checkbox"] {
 .map-over.active {
   z-index: 1006;
 }
+html.touchevents #map {
+  pointer-events: auto;
+}
+html.no-touchevents #map {
+  pointer-events: none;
+}
 #map {
   height: 100%;
   position: relative;
   margin-bottom: 550px;
   z-index: 1006;
-  pointer-events: none;
 }
 
 .gm-style-cc {
