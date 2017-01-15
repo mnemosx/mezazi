@@ -79,28 +79,9 @@
   </footer>
 
   <script src="//code.jquery.com/jquery-3.1.0.min.js"></script>
-  
-  <script>
-   
-
-    $(document).ready(function() {
-       var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ? true : false;
-        if (!isMobile) {
-          $('.map-over').click(function() {
-            $('#map').css("pointer-events", "auto");
-            $('.map-over').toggleClass("active");
-          });
-          $("#map").mouseleave(function() {
-            $('#map').css("pointer-events", "none");
-          });
-        }
-    });
-
-  </script>
-  
   <script>
     
-    $(document).ready(function() {
+  $(document).ready(function() {
       var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ? true : false;
       if (!isMobile) {
         $('.map-over').click(function() {
