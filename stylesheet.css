@@ -1038,7 +1038,7 @@ html.no-touchevents #map {
   width: 80px;
 }
 
-.kontaktu-wrap h2 {
+.kontaktu-wrap h1 {
   font-family: Rajdhani, 'sans-serif';
   font-size: calc(20pt + .4vw); 
   letter-spacing: 2px;

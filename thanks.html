@@ -2,84 +2,88 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Mežāži | Paldies!</title>
-    <style>
-        html,
-        body {
-            width: 100%;
-            height: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        
-        h3 {
-            padding: 30px;
-        }
-        
-        img {
-            width: 50%;
-        }
-        
-        .wrap {
-            text-align: center;
-        }
-        
-        h3 {
-            font-family: sans-serif;
-            font-weight: 300;
-            line-height: 1.6;
-            font-size: 16pt;
-        }
-        
-        button {
-            width: 220px;
-            height: 75px;
-            font-size: 12pt;
-            font-family: monospace;
-            font-weight: 700;
-            letter-spacing: 1px;
-            color: #2ecc71;
-            text-transform: uppercase;
-            border: solid #2ecc71 4px;
-            border-radius: 50px;
-            background-color: white;
-        }
-        
-        button:hover {
-            cursor: pointer;
-            color: #0d9c4a;
-            border-color: #0d9c4a;
-            background-image: url(img/arrow.svg);
-            background-size: 20px;
-            background-repeat: no-repeat;
-            animation: animatedBackground 0.1s linear 1 forwards;
-        }
-        
-        button:focus {
-            outline: none;
-        }
-        
-        @keyframes animatedBackground {
-            from {
-                background-position: 25% center;
-            }
-            to {
-                background-position: 15% center;
-            }
-        }
-
-    </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mežāži | Paldies!</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400|Rajdhani:400,700&amp;subset=latin-ext" rel="stylesheet">
+</head>
+<style>
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  h3 {
+    padding: 30px;
+  }
+  
+  img {
+    max-width: 300px;
+    width: 80%;
+  }
+  
+  .wrap {
+    text-align: center;
+  }
+  
+  h3 {
+    font-family: Merriweather, serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+    line-height: 1.6;
+    font-size: 18pt;
+  }
+  
+  button {
+    width: 220px;
+    height: 75px;
+    font-size: 12pt;
+    font-family: Rajdhani, 'sans-serif';
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #81a6b0;
+    text-transform: uppercase;
+    border: solid #81a6b0 4px;
+    border-radius: 50px;
+    background-color: white;
+  }
+  
+  button:hover {
+    cursor: pointer;
+    color: #2e3f43;
+    border-color: #2e3f43;
+    background-image: url(img/arrow.svg);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    animation: animatedBackground 0.1s linear 1 forwards;
+  }
+  
+  button:focus {
+    outline: none;
+  }
+  
+  @keyframes animatedBackground {
+    from {
+      background-position: 25% center;
+    }
+    to {
+      background-position: 15% center;
+    }
+  }
+</style>
 </head>
 
 <body>
-    <div class="wrap">
-        <img src="img/ok.svg">
-        <h3>Pieteikums nosūtīts veiksmīgi!<br> Drīzumā Tu no mums saņemsi ziņu ar apstiprinājumu!</h3>
-        <button type="button" onclick="location.href='rezervacija.html'">Atpakaļ</button>
-    </div>
+  <div class="wrap">
+    <img src="img/ok.svg">
+    <h3>Pieteikums nosūtīts veiksmīgi!<br> Drīzumā Tu no mums saņemsi ziņu ar apstiprinājumu!</h3>
+    <button type="button" onclick="location.href='rezervacija.html'">Atpakaļ</button>
+  </div>
 </body>
 
 </html>
