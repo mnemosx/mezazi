@@ -781,7 +781,6 @@ footer {
 
 .whole-reg-wrap {
   width: 100%;
-  
   background-color: #fff;
   position: relative;
   margin-bottom: 550px;
@@ -798,7 +797,7 @@ footer {
 }
 
 .reg-wrap:first-of-type {
-  padding-top: 120px;
+  padding-top: 110px;
 }
 
 .reg-saturs {
@@ -809,7 +808,7 @@ footer {
 
 .reg-wrap-mid {
   background-color: #efefef;
-  height: 700px;
+  height: 670px;
   width: 100%;
 }
 
@@ -819,7 +818,7 @@ footer {
   letter-spacing: 2px;
   text-transform: uppercase;
   font-size: 18pt;
-  padding: 80px 0 60px 0;
+  padding: 60px 0;
 }
 .reg-wrap-bottom .reg-nosauk {
   padding-bottom: 15px;
@@ -1068,7 +1067,10 @@ html.no-touchevents #map {
 }
 @media (max-width: 560px) {
   .kalendars {
-    width: 350px;
+    width: 80%;
+  }
+  .kalendars:first-of-type {
+    padding-bottom: 20px;
   }
   label,
   input,
@@ -1089,7 +1091,7 @@ html.no-touchevents #map {
     width: 100%;
   }
   .reg-wrap-mid {
-    height: 930px;
+    height: 900px;
   }
   #disqus_thread {
     width: 90%;
@@ -1109,6 +1111,13 @@ html.no-touchevents #map {
   }
   .kontaktu-wrap p {
     font-size: calc(14pt + .3vw);
+  }
+  .atsauksmju-uzruna {
+    padding-top: 120px;
+    line-height: 1.2;
+  }
+  .reg-wrap:first-of-type {
+    padding-top: 70px;
   }
 }
 @media (max-width: 480px) {
