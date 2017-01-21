@@ -68,48 +68,15 @@
       <a href="#"><img src="img/icons/instagram.svg"></a>
     </div>
   </footer>
+  
 
-  <script src="//code.jquery.com/jquery-3.1.0.min.js"></script>
-
-	<script>
-		var currentIndex = 0,
-			items = $('.gallery-container div'),
-			itemAmt = items.length;
-
-		function cycleItems() {
-			var item = $('.gallery-container div').eq(currentIndex);
-			items.hide();
-			item.css('display', 'inline-block');
-		}
-
-		$('.next').click(function() {
-			currentIndex += 1;
-			if (currentIndex > itemAmt - 1) {
-				currentIndex = 0;
-			}
-      cycleItems()
-		});
-
-		$('.prev').click(function() {
-			currentIndex -= 1;
-			if (currentIndex < 0) {
-				currentIndex = itemAmt - 1;
-			}
-			cycleItems();
-		});
-
-	</script>
-	
-  <script>
-    $("#toggle").click(function() {
-      $(this).toggleClass("active");
-      $('#overlay').toggleClass('open');
-      $('.logo-text').toggleClass('active');
-      $('body').toggleClass('active');
-      $('.comment-bg').toggleClass('active');
-      $('.gallery').toggleClass('active');
-    });
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
+          integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc="
+          crossorigin="anonymous">
   </script>
+  <script>window.jQuery || document.write('<script src="js/jquery-3.1.1.min.js"><\/script>');</script>
+  <script src="js/gallery.js"></script>
+  <script src="js/menu.js"></script>
 </body>
 
 </html>

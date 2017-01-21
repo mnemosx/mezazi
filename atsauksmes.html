@@ -50,7 +50,6 @@
     <div id="disqus_thread"></div>
   </div>
 
-  
   <footer>
     <img class="footer-logo" src="img/mezazi-logo-V.svg">
     <nav class="footer-one-row footer-nav">
@@ -71,45 +70,13 @@
     </div>
   </footer>
 
-  
-  <script src="//code.jquery.com/jquery-3.1.0.min.js"></script>
-  <script>
-    var disqus_config = function() {
-      this.page.url = 'https://mnemosx.github.io/mezazi/atsauksmes';
-      this.page.identifier = 'mezazi-atsauksmes';
-      this.callbacks.onReady = [function() 
-        {
-              var el = document.querySelector('.disqus-placeholder');
-              if (el.classList) 
-                el.classList.add('is-hidden'); 
-              else 
-                el.className += ' ' + 'is-hidden';
-        }]; 
-    };
-
-    (function() { // DON'T EDIT BELOW THIS LINE
-      var d = document,
-        s = d.createElement('script');
-      s.src = '//mnemosx-github-io-mezazi.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
-    })();
-    
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
+          integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc="
+          crossorigin="anonymous">
   </script>
+  <script>window.jQuery || document.write('<script src="js/jquery-3.1.1.min.js"><\/script>');</script>
+  <script src="js/disqus.js"></script>
   <noscript>Lai aplūkotu <a href="https://disqus.com/?ref_noscript">komentārus, lūdzu, iespējo pārlūkā Javascript.</a></noscript>
-  <script>
-    $("#toggle").click(function() {
-      $(this).toggleClass("active");
-      $('#overlay').toggleClass('open');
-      $('.logo-text').toggleClass('active');
-      $('body').toggleClass('active');
-      $('.comment-bg').toggleClass('active');
-      $('.gallery').toggleClass('active');
-      $('.menu-reverse-color').toggleClass('reverse');
-    });
-  </script>
-
-
+  <script src="js/menu.js"></script>
 </body>
-
 </html>
