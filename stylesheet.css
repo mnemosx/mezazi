@@ -16,7 +16,7 @@ body.active {
 
 .menu-icon {
   cursor: pointer;
-  width: 24px;
+  width: 26px;
   height: 16px;
 }
 
@@ -36,6 +36,7 @@ body.active {
 .menu-icon>.middle {
   top: 50%;
   margin-top: -1px;
+  width: 20px
 }
 
 .menu-icon>.bottom {
@@ -585,11 +586,6 @@ footer {
   margin: 30px 10px;
 }
 
-
-
-
-
-
 /* ------------------------- PAR MUMS ------------------------- */
 
 .gallery-container {
@@ -615,7 +611,7 @@ footer {
   width: 40%;
   top: 20%;
   left: 15%;
-  line-height: 1.5;
+  line-height: 1.6;
 }
 .about-2 {
   top: 30%;
@@ -640,6 +636,12 @@ footer {
   -webkit-box-decoration-break: clone;
   position: relative;
   z-index: 3;
+}
+.text-about-heading {
+  font-family: Rajdhani, sans-serif;
+  font-weight: 700;
+  font-size: 4vmin;
+  padding: 5px 0;
 }
 
 .galer-poga {
@@ -827,42 +829,33 @@ footer {
   margin-top: 35px;
 }
 
-.reg-nosauk h2:before {
+.reg-nosauk h2 {
+  display: inline;
+}
+.number-one {
+  background-image: url(img/1.svg);
+}
+.number-two {
+  background-image: url(img/2.svg);
+}
+.number-three {
+  background-image: url(img/3.svg);
+}
+.number{
   background-size: 40px 40px;
-  display: inline-block;
   width: 40px;
   height: 40px;
+  display: inline-block;
   position: relative;
   top: 10px;
-  right: 10px;
+  right: 1000px;
   opacity: 0;
-  content: "";
+  transition: 2.5s;
 }
 
-.first-h2:before {
-  background-image: url(img/1.svg);
-  animation: slideIn 1s ease 1s forwards;
-}
-
-.second-h2:before {
-  background-image: url(img/2.svg);
-  animation: slideIn 1s ease 2s forwards;
-}
-
-.third-h2:before {
-  background-image: url(img/3.svg);
-  animation: slideIn 1s ease 3s forwards;
-}
-
-@keyframes slideIn {
-  0% {
-    transform: translateX(-900px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
+.translate.triggeredCSS3 {
+  transform : translate3d(1000px,0,0);
+  opacity: 1;
 }
 
 .kalendars {
@@ -1133,7 +1126,7 @@ html.no-touchevents #map {
     font-size: 18pt;
   }
   .btn {
-    max-width: 300px;
+    max-width: 250px;
   }
   .btn-1 rect {
     stroke-width: 6;
@@ -1142,13 +1135,13 @@ html.no-touchevents #map {
     transition: all 2.5s cubic-bezier(0.19, 1, 0.22, 1);
   }
 
-  .btn-1:focus, btn-1:hover {
-    transform: scale(1.5, 1.5);
+  .btn-1:focus, .btn-1:hover {
+    transform: scale(1.3, 1.3);
   }
 
   .btn-1:focus rect, .btn-1:hover rect {
     stroke-width: 6;
-    stroke-dasharray: 45, 485;
+    stroke-dasharray: 45, 410;
     stroke-dashoffset: 48;
     transition: all 1.5s cubic-bezier(0.19, 1, 0.22, 1);
   }
