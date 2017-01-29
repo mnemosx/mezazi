@@ -12,7 +12,12 @@ body {
 body.active {
   overflow: hidden;
 }
-/* ------------ N A V I G A T I O N   M E N U ----------- */
+
+/* --------------------------------------------------
+   --------------------------------------------------
+                    NAVIGATION MENU
+   --------------------------------------------------
+   -------------------------------------------------- */
 
 .menu-icon {
   cursor: pointer;
@@ -132,14 +137,14 @@ body.active {
   top: 0;
   left: 0;
   width: 100%;
-  height: 0%;
+  height: 100%;
   opacity: 0;
   visibility: hidden;
-  transition: opacity .35s, visibility .35s, height .35s;
+  transition: opacity .35s, visibility .35s;
 }
 
 .overlay.open {
-  opacity: .99;
+  opacity: .98;
   visibility: visible;
   height: 100%;
   z-index: 10000;
@@ -234,7 +239,23 @@ body.active {
   height: 50px;
   margin: 23px 0 0 50px;
 }
-/* ------------ BACKGROUND VIDEO -------------- */
+/*.menu-contact {
+  position: absolute;
+  text-align: center;
+  font-family: Rajdhani, 'sans-serif';
+  font-size: 16pt;
+  color: #fff;
+  letter-spacing: 2px;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}*/
+
+/* --------------------------------------------------
+   --------------------------------------------------
+                  BACKGROUND VIDEO 
+   --------------------------------------------------
+   -------------------------------------------------- */
 
 .video-container {
   position: relative;
@@ -270,6 +291,12 @@ body.active {
   transform: translateX(-50%) translateY(-50%);
   */
 }
+
+/* --------------------------------------------------
+   --------------------------------------------------
+                        SĀKUMS 
+   --------------------------------------------------
+   -------------------------------------------------- */
 
 .front-logo {
   max-width: 400px;
@@ -355,7 +382,6 @@ body.active {
   height: 950px;
   color: #eeece3;
 }
-
 
 .front.atsauksmes:after {
   content: ' ';
@@ -536,6 +562,12 @@ hr {
   stroke: #eeece3
 }
 
+/* --------------------------------------------------
+   --------------------------------------------------
+                        FOOTER 
+   --------------------------------------------------
+   -------------------------------------------------- */
+
 footer {
   background-color: #2e3f43;
   height: 550px;
@@ -590,7 +622,11 @@ footer {
   margin: 30px 10px;
 }
 
-/* ------------------------- PAR MUMS ------------------------- */
+/* --------------------------------------------------
+   --------------------------------------------------
+                    PAR MUMS 
+   --------------------------------------------------
+   -------------------------------------------------- */
 
 .gallery {
   position: absolute;
@@ -720,7 +756,11 @@ footer {
   }
 }
 
-/* ------------------------- ATSAUKSMES ------------------------- */
+/* --------------------------------------------------
+   --------------------------------------------------
+                    ATSAUKSMES
+   --------------------------------------------------
+   -------------------------------------------------- */
 
 .comment-bg {
   position: relative;
@@ -783,10 +823,15 @@ footer {
   padding: 100px 0;
 }
 
-/* ------------------------- REZERVĀCIJA ------------------------- */
+/* --------------------------------------------------
+   --------------------------------------------------
+                    REZERVĀCIJA
+   --------------------------------------------------
+   -------------------------------------------------- */
 
 .whole-reg-wrap {
   width: 100%;
+  height: auto;
   background-color: #fff;
   position: relative;
   margin-bottom: 550px;
@@ -818,7 +863,6 @@ footer {
   width: 100%;
 }
 
-
 .reg-nosauk {
   font-family: Rajdhani, 'sans-serif';
   letter-spacing: 2px;
@@ -827,10 +871,7 @@ footer {
   padding: 60px 0;
 }
 .reg-wrap-bottom .reg-nosauk {
-  padding-bottom: 15px;
-}
-.reg-wrap-bottom hr {
-  margin-top: 35px;
+  padding: 0;
 }
 
 .reg-nosauk h2 {
@@ -960,7 +1001,12 @@ input[type="checkbox"] {
   width: 85%;
 }
 .reg-wrap-bottom {
-  height: 100%;
+  height: 600px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .reg-saturs-bottom p {
@@ -969,9 +1015,12 @@ input[type="checkbox"] {
   line-height: 1.4;
 }
 
+/* --------------------------------------------------
+   --------------------------------------------------
+                      KONTAKTI 
+   --------------------------------------------------
+   -------------------------------------------------- */
 
-
-/* ---------------------------- KONTAKTI ----------------- */
 .ugh-another-fuckin-wraper {
   position: relative;
   height: 70%;
@@ -1055,7 +1104,11 @@ html.no-touchevents #map {
   filter: blur(4px);
 }
 
-
+/* --------------------------------------------------
+   --------------------------------------------------
+                    MEDIA QUERIES 
+   --------------------------------------------------
+   -------------------------------------------------- */
 
 @media (max-width: 800px) {
   .kalendars:last-of-type {
