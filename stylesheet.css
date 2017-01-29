@@ -6,11 +6,19 @@
 html,
 body {
   height: 100%;
-
 }
 
 body.active {
   overflow: hidden;
+}
+
+body::-webkit-scrollbar {
+  width: 5px;
+  background-color: #312d2d;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #9494a0;
 }
 
 /* --------------------------------------------------
@@ -297,6 +305,11 @@ body.active {
                         SĀKUMS 
    --------------------------------------------------
    -------------------------------------------------- */
+
+.blur-front.active {
+  filter: blur(6px);
+  transition: filter .3s linear;
+}
 
 .front-logo {
   max-width: 400px;
@@ -637,7 +650,8 @@ footer {
 }
 
 .gallery.active {
-  filter: blur(4px);
+  filter: blur(6px);
+  transition: filter .3s linear;
 }
 .gallery-container {
   height: 100%;
@@ -769,7 +783,8 @@ footer {
   z-index: 1003;
 }
 .comment-bg.active {
-  filter: blur(4px);
+  filter: blur(6px);
+  transition: filter .3s linear;
 }
 
 .atsauksmju-uzruna {
@@ -839,7 +854,8 @@ footer {
 }
 
 .reg-wrap.active {
-  filter: blur(4px);
+  filter: blur(6px);
+  transition: filter .3s linear;
 }
 
 .reg-wrap {
@@ -1101,7 +1117,8 @@ html.no-touchevents #map {
   font-size: calc(10pt + .3vw);
 }
 .kontakti.active, #map.active {
-  filter: blur(4px);
+  filter: blur(6px);
+  transition: filter .3s linear;
 }
 
 /* --------------------------------------------------
