@@ -292,13 +292,13 @@ body::-webkit-scrollbar-thumb {
   min-height: 500px;
 }
 
+/* Nezinu, kāpēc, bet šis jāizņem, lai bulta darbotos
 .bgvid {
-  /* Nezinu, kāpēc, bet šis jāizņem, lai bulta darbotos
   top: 50%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
-  */
 }
+*/
 
 /* --------------------------------------------------
    --------------------------------------------------
@@ -306,6 +306,9 @@ body::-webkit-scrollbar-thumb {
    --------------------------------------------------
    -------------------------------------------------- */
 
+.blur-front {
+  height: 100%;
+}
 .blur-front.active {
   filter: blur(6px);
   transition: filter .3s linear;
