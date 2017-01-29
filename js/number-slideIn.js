@@ -22,7 +22,7 @@ $(function() {
   $(".number-two").inViewport(function(px){
     setTimeout(function(){
       if(px) $(".number-two").addClass("triggeredCSS3");
-    }, 500);
+    }, 200);
   });
 });
 

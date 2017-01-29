@@ -1,3 +1,4 @@
+//lai footeris nelien priekšā atsauksmju lauka fona attēlam
 $(function() {
   $(window).scroll(function () {
 
