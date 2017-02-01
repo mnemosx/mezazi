@@ -6,6 +6,10 @@
 html,
 body {
   height: 100%;
+
+}
+body {
+  width: calc(100vw - 5px); /* Lai fixētais menu overlay nebīdītos, pazūdot scrollbar */
 }
 
 body.active {
@@ -584,12 +588,16 @@ hr {
    -------------------------------------------------- */
 
 footer {
+
   background-color: #2e3f43;
   height: 550px;
   width: 100%;
   position: fixed;
   bottom: 0;
   z-index: 1001;
+}
+.hide {
+  visibility: hidden;
 }
 
 .footer-nav>ul {
