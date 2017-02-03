@@ -100,7 +100,7 @@ body::-webkit-scrollbar-thumb {
   position: relative;
   z-index: 10001;
   float: right;
-  font-family: Rajdhani, sans-serif;
+  font-family: Rajdhani, Tahoma, sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   color: #fff;
@@ -188,7 +188,7 @@ body::-webkit-scrollbar-thumb {
 
 .overlay nav {
   font-size: calc(24px + 1.5vw);
-  font-family: Rajdhani, sans-serif;
+  font-family: Rajdhani, Tahoma, sans-serif;
   font-weight: 400;
   text-align: center;
   position: relative;
@@ -257,7 +257,7 @@ body::-webkit-scrollbar-thumb {
 /*.menu-contact {
   position: absolute;
   text-align: center;
-  font-family: Rajdhani, 'sans-serif';
+  font-family: Rajdhani, Tahoma, 'sans-serif';
   font-size: 16pt;
   color: #fff;
   letter-spacing: 2px;
@@ -324,7 +324,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .logo-text>h1 {
-  font-family: Merriweather, serif;
+  font-family: Merriweather, Palatino, Georgia, serif;
   font-size: 18pt;
   color: #fff;
   letter-spacing: 2px;
@@ -482,7 +482,7 @@ body::-webkit-scrollbar-thumb {
 
 .front>h1 {
   font-size: calc(36pt + 1vw);
-  font-family: Rajdhani, sans-serif;
+  font-family: Rajdhani, Tahoma, sans-serif;
   font-weight: 700;
   letter-spacing: 10px;
   text-transform: uppercase;
@@ -518,7 +518,7 @@ hr {
   outline: none;
   cursor: pointer;
   display: block;
-  font-family: Rajdhani, sans-serif;
+  font-family: Rajdhani, Tahoma, sans-serif;
   letter-spacing: 3px;
   font-size: 22px;
   font-weight: 400;
@@ -622,7 +622,7 @@ footer {
 .footer-nav a {
   display: inline-block;
   text-decoration: none;
-  font-family: Rajdhani, sans-serif;
+  font-family: Rajdhani, Tahoma, sans-serif;
   font-weight: 700;
   font-size: 22px;
   letter-spacing: 2px;
@@ -703,7 +703,7 @@ footer {
   display: inline;
   font-size: 2.7vmin;
   color: #00052e;
-  font-family: Merriweather, serif;
+  font-family: Merriweather, Palatino, Georgia, serif;
   background: rgba(181, 161, 161, 0.88);
   padding: 2px 15px;
   box-decoration-break: clone; 
@@ -711,7 +711,7 @@ footer {
   position: relative;
 }
 .text-about-heading {
-  font-family: Rajdhani, sans-serif;
+  font-family: Rajdhani, Tahoma, sans-serif;
   font-weight: 700;
   font-size: 4vmin;
   text-transform: uppercase;
@@ -807,12 +807,12 @@ footer {
 }
 
 .atsauksmju-uzruna p {
-  font-family: Merriweather, serif;
+  font-family: Merriweather, Palatino, Georgia, serif;
   font-size: 16pt;
   margin-top: 40px;
 }
 .atsauksmju-uzruna h1 {
-  font-family: Rajdhani, 'sans-serif';
+  font-family: Rajdhani, Tahoma, 'sans-serif';
   font-size: 36pt;
   letter-spacing: 2px;
 }
@@ -841,7 +841,7 @@ footer {
 
 .disqus-placeholder {
   font-size: 16px;
-  font-family: Merriweather, serif;
+  font-family: Merriweather, Palatino, Georgia, serif;
   text-align: center;
   width: 60%;
   margin: 0 auto;
@@ -890,7 +890,7 @@ footer {
 }
 
 .reg-nosauk {
-  font-family: Rajdhani, 'sans-serif';
+  font-family: Rajdhani, Tahoma, 'sans-serif';
   letter-spacing: 2px;
   text-transform: uppercase;
   font-size: 18pt;
@@ -946,7 +946,7 @@ label {
   width: 180px;
   text-align: right;
   margin-right: 5%;
-  font-family: Merriweather, serif;
+  font-family: Merriweather, Palatino, Georgia, serif;
   padding-top: 7px;
   font-size: 15pt;
 }
@@ -983,7 +983,7 @@ textarea {
   display: block;
   width: 300px;
   margin: 7px;
-  font-family: Merriweather, serif;
+  font-family: Merriweather, Palatino, Georgia, serif;
   font-size: 1.1em;
   padding: 10px 0;
   border: none;
@@ -1036,7 +1036,7 @@ input[type="checkbox"] {
 }
 
 .reg-saturs-bottom p {
-  font-family: Merriweather, serif;
+  font-family: Merriweather, Palatino, Georgia, serif;
   font-size: 16pt;
   line-height: 1.4;
 }
@@ -1117,13 +1117,13 @@ html.no-touchevents #map {
 }
 
 .kontaktu-wrap h1 {
-  font-family: Rajdhani, 'sans-serif';
+  font-family: Rajdhani, Tahoma, 'sans-serif';
   font-size: calc(20pt + .4vw); 
   letter-spacing: 2px;
   margin-top: 30px;
 }
 .kontaktu-wrap p {
-  font-family: Merriweather, serif;
+  font-family: Merriweather, Palatino, Georgia, serif;
   font-size: calc(10pt + .3vw);
 }
 .kontakti.active, #map.active {
@@ -1179,7 +1179,7 @@ html.no-touchevents #map {
     display: inline;
     font-size: 4vmin;
     color: #00052e;
-    font-family: Merriweather, serif;
+    font-family: Merriweather, Palatino, Georgia, serif;
     background: rgba(181, 161, 161, 0.88);
     padding: 2px 15px;
     box-decoration-break: clone; 
@@ -1187,7 +1187,7 @@ html.no-touchevents #map {
     position: relative;
   }
   .text-about-heading {
-    font-family: Rajdhani, sans-serif;
+    font-family: Rajdhani, Tahoma, sans-serif;
     font-weight: 700;
     font-size: 6vmin;
     text-transform: uppercase;
