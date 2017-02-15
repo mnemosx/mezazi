@@ -1143,6 +1143,9 @@ html.no-touchevents #map {
   }
 }
 @media (max-width: 560px) {
+  body {
+    width: 100%;
+  }
   .overlay-logo {
     display: none;
   }
