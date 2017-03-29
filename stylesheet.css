@@ -782,13 +782,59 @@ footer {
 
 /* --------------------------------------------------
    --------------------------------------------------
+                    GALERIJA
+   --------------------------------------------------
+   -------------------------------------------------- */
+
+.gallery-body h1 {
+  font-family: Rajdhani, Tahoma, 'sans-serif';
+  font-size: 36pt;
+  letter-spacing: 2px;
+  text-align: center;
+  position: relative;
+  top: 130px;
+}
+.wrapp {
+  width: 100%;
+  top: 180px;
+  position: relative;
+  margin-bottom: 550px;
+  z-index: 1003;
+  background-color: white;
+}
+.thumbnail-gallery {
+  width: 95%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+  padding-bottom: 80px;
+}
+.gallery-img-holder {
+  overflow: hidden;
+  position: relative;
+  min-height: 100%;
+}
+.gallery-img-holder > a > img {
+  width: 100%;
+  min-height: 100%;
+  transition: all .5s ease;
+}
+.gallery-img-holder > a > img:hover {
+  transform: scale(1.1);
+  opacity: .8;
+  cursor: zoom-in;
+}
+
+/* --------------------------------------------------
+   --------------------------------------------------
                     ATSAUKSMES
    --------------------------------------------------
    -------------------------------------------------- */
 
 .comment-bg {
   position: relative;
-  margin-bottom:  550px;
+  margin-bottom: 550px;
   background-color: #efefef;
   z-index: 1003;
 }
@@ -1142,6 +1188,13 @@ html.no-touchevents #map {
     display: none;
   }
 }
+@media (max-width: 1200px) {
+  .thumbnail-gallery {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+
 @media (max-width: 560px) {
   body {
     width: 100%;
@@ -1234,6 +1287,11 @@ html.no-touchevents #map {
   #disqus_thread {
     width: 90%;
   }
+  
+  .thumbnail-gallery {
+    grid-template-columns: 1fr;
+  }
+  
   .kontakti {
     flex-direction: column;
     align-items: center;
