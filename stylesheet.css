@@ -785,7 +785,12 @@ footer {
                     GALERIJA
    --------------------------------------------------
    -------------------------------------------------- */
-
+.gallery-body {
+  background-color: white;
+  position: relative;
+  width: 100%;
+  z-index: 10032;
+}
 .gallery-body h1 {
   font-family: Rajdhani, Tahoma, 'sans-serif';
   font-size: 36pt;
@@ -794,14 +799,11 @@ footer {
   top: 130px;
   margin: 0 auto;
   width: 170px;
-  z-index: 1004;
 }
-
 .wrapp {
   width: 100%;
   top: 180px;
   position: relative;
-  margin-top: -180px;
   margin-bottom: 550px;
   z-index: 1003;
   background-color: white;
@@ -1318,6 +1320,12 @@ html.no-touchevents #map {
     width: 90%;
   }
   
+  .gallery-body h1 {
+    top: 40px;
+  }
+  .wrapp {
+    top: 100px;
+  }
   .thumbnail-gallery {
     grid-template-columns: 1fr;
   }
