@@ -797,12 +797,15 @@ footer {
   letter-spacing: 2px;
   position: relative;
   top: 130px;
-  margin: 0 auto;
+  margin: 0;
   width: 170px;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 1004;
 }
 .wrapp {
   width: 100%;
-  top: 180px;
+  padding-top: 200px;
   position: relative;
   margin-bottom: 550px;
   z-index: 1003;
@@ -1320,12 +1323,8 @@ html.no-touchevents #map {
     width: 90%;
   }
   
-  .gallery-body h1 {
-    top: 40px;
-  }
-  .wrapp {
-    top: 100px;
-  }
+  
+ 
   .thumbnail-gallery {
     grid-template-columns: 1fr;
   }
