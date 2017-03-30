@@ -794,12 +794,14 @@ footer {
   top: 130px;
   margin: 0 auto;
   width: 170px;
+  z-index: 1004;
 }
 
 .wrapp {
   width: 100%;
   top: 180px;
   position: relative;
+  margin-top: -180px;
   margin-bottom: 550px;
   z-index: 1003;
   background-color: white;
@@ -1318,6 +1320,10 @@ html.no-touchevents #map {
   
   .thumbnail-gallery {
     grid-template-columns: 1fr;
+  }
+  .gallery-img-holder > a > img:hover {
+    transform: scale(1);
+    opacity: 1;
   }
   
   .kontakti {
