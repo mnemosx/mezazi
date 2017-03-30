@@ -1,9 +1,10 @@
-Viesunamiem.lv logo kājenē.
+
 Dizains mobilai par mums galerijai
-Galerijai mobilā versija fix
+Galerijai mobilā landscape versija fix
 Dizains cenrādim
 Dizains Noteikumiem un BUJ
 Sākuma mobile landscape jāpārtaisa
+Mobile landscape menu fix
 Raustās izvēlne
 Please fill out this field latviski
 Disqus alternative

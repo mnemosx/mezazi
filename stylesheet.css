@@ -185,6 +185,12 @@ body::-webkit-scrollbar-thumb {
 .overlay.open li:nth-of-type(5) {
   animation-delay: .6s;
 }
+.overlay.open li:nth-of-type(6) {
+  animation-delay: .7s;
+}
+.overlay.open li:nth-of-type(7) {
+  animation-delay: .8s;
+}
 
 .overlay nav {
   font-size: calc(24px + 1.5vw);
@@ -206,7 +212,7 @@ body::-webkit-scrollbar-thumb {
 
 .overlay ul li {
   display: block;
-  height: 12vmin;
+  height: 10vmin;
   min-height: 70px;
   position: relative;
   opacity: 0;
@@ -785,6 +791,7 @@ footer {
                     GALERIJA
    --------------------------------------------------
    -------------------------------------------------- */
+
 .gallery-body {
   width: calc(100vw - 5px);
  /* 
@@ -793,13 +800,16 @@ footer {
   z-index: 10032;
   */
 }
-.gallery-body h1 {
+.wrapp.active {
+  filter: blur(6px);
+  transition: filter .3s linear;
+}
+.wrapp h1 {
   font-family: Rajdhani, Tahoma, 'sans-serif';
   font-size: 36pt;
   letter-spacing: 2px;
   position: relative;
-  top: 130px;
-  margin: 0;
+  margin-bottom: 100px;
   width: 170px;
   left: 50%;
   transform: translate(-50%);
@@ -807,7 +817,7 @@ footer {
 }
 .wrapp {
   width: 100%;
-  padding-top: 200px;
+  padding-top: 150px;
   position: relative;
   margin-bottom: 550px;
   z-index: 1003;
@@ -1123,6 +1133,28 @@ input[type="checkbox"] {
   font-size: 16pt;
   line-height: 1.4;
 }
+/* --------------------------------------------------
+--------------------------------------------------
+GALERIJA
+--------------------------------------------------
+-------------------------------------------------- */
+
+.piekap-velak {
+  position: relative;
+  background-color: white;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  z-index: 1003;
+  margin-bottom: 550px;
+}
+
+.piekap-velak h1 {
+  width: 70%;
+  position: relative;
+  top: 50%;
+}
+
 
 /* --------------------------------------------------
    --------------------------------------------------
