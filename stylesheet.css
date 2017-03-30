@@ -790,10 +790,12 @@ footer {
   font-family: Rajdhani, Tahoma, 'sans-serif';
   font-size: 36pt;
   letter-spacing: 2px;
-  text-align: center;
   position: relative;
   top: 130px;
+  margin: 0 auto;
+  width: 170px;
 }
+
 .wrapp {
   width: 100%;
   top: 180px;
@@ -819,11 +821,37 @@ footer {
   width: 100%;
   min-height: 100%;
   transition: all .5s ease;
+  object-fit: cover;
 }
 .gallery-img-holder > a > img:hover {
   transform: scale(1.1);
   opacity: .8;
   cursor: zoom-in;
+}
+
+.bounce-up {
+  opacity: 0;
+  -moz-transition: all 500ms ease-out;
+  -webkit-transition: all 500ms ease-out;
+  -o-transition: all 500ms ease-out;
+  transition: all 500ms ease-out;
+  -moz-transform: translate3d(0px, 100px, 0px);
+  -webkit-transform: translate3d(0px, 100px, 0px);
+  -o-transform: translate(0px, 100px);
+  -ms-transform: translate(0px, 100px);
+  transform: translate3d(0px, 100, 0px);
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.bounce-up.in-view {
+  opacity: 1;
+  -moz-transform: translate3d(0px, 0px, 0px);
+  -webkit-transform: translate3d(0px, 0px, 0px);
+  -o-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  transform: translate3d(0px, 0px, 0px);
 }
 
 /* --------------------------------------------------
