@@ -1,6 +1,6 @@
 Viesunamiem.lv logo kājenē.
 Dizains mobilai par mums galerijai
-Dizains galerijai
+Galerijai mobilā versija fix
 Dizains cenrādim
 Dizains Noteikumiem un BUJ
 Sākuma mobile landscape jāpārtaisa
@@ -8,6 +8,7 @@ Raustās izvēlne
 Please fill out this field latviski
 Disqus alternative
 Some content moves on scrollbar hover
+Sākumā sadaļa galerijai?
 Vieta auto video
 Rezervācijas lapā tukšajā laukumā zem pogas - attēls/ikona/animācija(clouds)?
 Atsauksmju dizaina uzlabojumi
